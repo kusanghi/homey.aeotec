@@ -1,0 +1,70 @@
+{
+  "triggers": [
+    {
+      "id": "zw088_press_1",
+      "title": {
+        "en": "Left top short pressed",
+        "nl": "Linksboven kort ingedrukt"
+      },
+      "args": []
+    },
+    {
+      "id": "zw088_hold_1",
+      "title": {
+        "en": "Left top long pressed",
+        "nl": "Linksboven lang ingedrukt"
+      },
+      "args": []
+    },
+    {
+      "id": "zw088_press_2",
+      "title": {
+        "en": "Right top short pressed",
+        "nl": "Rechtsboven kort ingedrukt"
+      },
+      "args": []
+    },
+    {
+      "id": "zw088_hold_2",
+      "title": {
+        "en": "Right top long pressed",
+        "nl": "Rechtsboven lang ingedrukt"
+      },
+      "args": []
+    },
+    {
+      "id": "zw088_press_3",
+      "title": {
+        "en": "Left bottom short pressed",
+        "nl": "Linksonder kort ingedrukt"
+      },
+      "args": []
+    },
+    {
+      "id": "zw088_hold_3",
+      "title": {
+        "en": "Left bottom long pressed",
+        "nl": "Linksonder lang ingedrukt"
+      },
+      "args": []
+    },
+    {
+      "id": "zw088_press_4",
+      "title": {
+        "en": "Right bottom short pressed",
+        "nl": "Rechtsonder kort ingedrukt"
+      },
+      "args": []
+    },
+    {
+      "id": "zw088_hold_4",
+      "title": {
+        "en": "Right bottom long pressed",
+        "nl": "Rechtsonder lang ingedrukt"
+      },
+      "args": []
+    }
+  ],
+  "conditions": [],
+  "actions": []
+}

@@ -1,0 +1,82 @@
+{
+  "id": "ZW099",
+  "name": {
+    "en": "Smart Dimmer 6"
+  },
+  "class": "socket",
+  "capabilities": [
+    "dim",
+    "measure_power",
+    "meter_power",
+    "onoff"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": 134,
+    "productTypeId": [
+      3
+    ],
+    "productId": [
+      99
+    ],
+    "zwaveAllianceProductId": 1519,
+    "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/1519/Manual Aeon Labs Smart Dimmer 6.pdf",
+    "learnmode": {
+      "instruction": {
+        "en": "Press the action button on the {{driverNameEn}} to enter learn mode",
+        "nl": "Druk op de actie knop op de {{driverNameNl}} om de leer modus te activeren"
+      }
+    },
+    "associationGroups": [
+      1,
+      2
+    ],
+    "associationGroupsOptions": {
+      "1": {
+        "hint": {
+          "en": "Group 1 is assigned to the Lifeline association group and every device has 5 nodes to associate.\nWhen the Dimmer is turned on or off using the action button, the Dimmer will send a basic report of its status to the nodes in association group 1. To change what kind of signal is sent to the nodes in group 1, please see the detailed description of configuration parameter 80.\n"
+        }
+      }
+    },
+    "defaultConfiguration": [
+      {
+        "id": 3,
+        "size": 1,
+        "value": 1
+      },
+      {
+        "id": 80,
+        "size": 1,
+        "value": 2
+      },
+      {
+        "id": 90,
+        "size": 1,
+        "value": 1
+      },
+      {
+        "id": 91,
+        "size": 2,
+        "value": 25
+      },
+      {
+        "id": 92,
+        "size": 1,
+        "value": 30
+      },
+      {
+        "id": 101,
+        "size": 4,
+        "value": 12
+      },
+      {
+        "id": 111,
+        "size": 4,
+        "value": 15
+      }
+    ]
+  }
+}

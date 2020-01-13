@@ -1,0 +1,264 @@
+[
+  {
+    "id": "power_off_state_recovery",
+    "type": "dropdown",
+    "label": {
+      "en": "State recovery after power loss",
+      "nl": "Status herstel na stroomuitval"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the behaviour of the {{driverNameEn}} after power loss.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het gedrag van de {{driverNameNl}} na stroomuitval."
+    },
+    "zwave": {
+      "index": 20,
+      "size": 1
+    },
+    "value": "0",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Recover last state before power loss",
+          "nl": "Herstel de laatste status voor de stroomuitval"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Always turn on",
+          "nl": "Altijd aan"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "Always turn off",
+          "nl": "Altijd uit"
+        }
+      }
+    ]
+  },
+  {
+    "id": "report_color_change",
+    "type": "checkbox",
+    "label": {
+      "en": "Report color change",
+      "nl": "Rapporteer kleurverandering"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not the {{driverNameEn}} reports color changes.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of de {{driverNameNl}} zijn kleurveranderingen rapporteerd."
+    },
+    "zwave": {
+      "index": 32,
+      "size": 1
+    },
+    "value": false
+  },
+  {
+    "id": "color_switch_last_brightness",
+    "type": "checkbox",
+    "label": {
+      "en": "Set last brightness level on color switch",
+      "nl": "Zet het laatste helderheidsniveau op kleurverandering"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not the {{driverNameEn}} turns to it's last brightness setting when receiving the Color Switch Set Command.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of de {{driverNameNl}} het laatste helderheidsniveau instelt bij het ontvangen van een Color Switch Set commando."
+    },
+    "zwave": {
+      "index": 34,
+      "size": 1
+    },
+    "value": false
+  },
+  {
+    "id": "white_display_mode",
+    "type": "dropdown",
+    "label": {
+      "en": "Cold/warm white display mode",
+      "nl": "Koud/warm wit weergave modus"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the display mode for displaying cold or warm white.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de weergave modus voor het koude en warme witte licht."
+    },
+    "zwave": {
+      "index": 35,
+      "size": 1
+    },
+    "value": "0",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Arbitrary combination of cold and warm light",
+          "nl": "Arbitraire combinatie tussen koud en warm licht"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Complementary combination of cold and warm light",
+          "nl": "Complementaire combinatie tussen koud en warm licht"
+        }
+      }
+    ]
+  },
+  {
+    "id": "colorful_mode",
+    "type": "dropdown",
+    "label": {
+      "en": "Standard color animations",
+      "nl": "Standaard geanimeerde kleuren"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) sets the {{driverNameEn}} to display one of the standard color animations.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) laat de {{driverNameNl}} een van de standaard animaties weergeven."
+    },
+    "zwave": {
+      "index": 40,
+      "size": 1
+    },
+    "value": "0",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "None, turned off",
+          "nl": "Geen, uitgeschakeld"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Rainbow mode",
+          "nl": "Regenboog modus"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "Multi color mode",
+          "nl": "Multi color modus"
+        }
+      },
+      {
+        "id": "3",
+        "label": {
+          "en": "Blink red",
+          "nl": "Knipperend rood"
+        }
+      },
+      {
+        "id": "4",
+        "label": {
+          "en": "Blink green",
+          "nl": "Knipperend groen"
+        }
+      },
+      {
+        "id": "5",
+        "label": {
+          "en": "Blink blue",
+          "nl": "Knipperend blauw"
+        }
+      }
+    ]
+  },
+  {
+    "id": "state_change_reports",
+    "type": "dropdown",
+    "label": {
+      "en": "Notifications to association group 1",
+      "nl": "Notificaties richting assocatie groep 1"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the notification command class used for notifications to the 1st association group.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt welke command class er wordt gebruikt voor notificaties richting de 1ste associatie groep."
+    },
+    "zwave": {
+      "index": 80,
+      "size": 1
+    },
+    "value": "2",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Disabled, none sent",
+          "nl": "Uitgeschakelt, er wordt niets verstuurd"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Hail command",
+          "nl": "Hail commando"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "Basic command",
+          "nl": "Basic commando"
+        }
+      },
+      {
+        "id": "3",
+        "label": {
+          "en": "Hail command on action button press",
+          "nl": "Hail commando bij indrukken van de actie knop"
+        }
+      }
+    ]
+  },
+  {
+    "id": "dimmer_mode",
+    "type": "dropdown",
+    "label": {
+      "en": "Set the Dimmer mode",
+      "nl": "Stel de dim modus in"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the dim mode for the {{driverNameEn}}",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de dim modus voor de {{driverNameNl}}"
+    },
+    "zwave": {
+      "index": 112,
+      "size": 1
+    },
+    "value": "0",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Parabolic curve",
+          "nl": "Prabolische curve"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Index curve",
+          "nl": "Index curve"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "(Parabolic + Index)/2",
+          "nl": "(Parabolisch + index)/2"
+        }
+      },
+      {
+        "id": "3",
+        "label": {
+          "en": "Linear",
+          "nl": "Lineair"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,67 @@
+{
+  "id": "ZW074",
+  "name": {
+    "en": "Multisensor 4-in-1 Gen5"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "measure_battery",
+    "measure_humidity",
+    "measure_luminance",
+    "alarm_motion",
+    "measure_temperature"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.jpg",
+    "small": "{{driverAssetsPath}}/images/small.jpg"
+  },
+  "zwave": {
+    "manufacturerId": 134,
+    "productTypeId": [
+      2,
+      514
+    ],
+    "productId": [
+      74
+    ],
+    "zwaveAllianceProductId": 1169,
+    "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/1169/Instructions - MultiSensor Gen5 MCert1.pdf",
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Press the action button on the {{driverNameEn}}",
+        "nl": "Druk op de actie knop van de {{driverNameNl}}"
+      }
+    },
+    "associationGroups": [
+      1
+    ],
+    "defaultConfiguration": [
+      {
+        "id": 5,
+        "size": 1,
+        "value": 2
+      },
+      {
+        "id": 28,
+        "size": 1,
+        "value": 1
+      },
+      {
+        "id": 41,
+        "size": 2,
+        "value": 1290
+      },
+      {
+        "id": 43,
+        "size": 2,
+        "value": 12800
+      },
+      {
+        "id": 111,
+        "size": 4,
+        "value": 300
+      }
+    ]
+  }
+}

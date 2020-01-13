@@ -1,0 +1,38 @@
+{
+  "id": "ZW112",
+  "name": {
+    "en": "Door/Window Sensor 6"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "measure_battery",
+    "alarm_contact"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": 134,
+    "productTypeId": [
+      2,
+      2562,
+      514
+    ],
+    "productId": [
+      112
+    ],
+    "zwaveAllianceProductId": 2770,
+    "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/2770/Door Window Sensor 6 manual.pdf",
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Short press the action button on the back of the {{driverNameEn}}.",
+        "nl": "Druk kort op de actie knop op de achterkant van de {{driverNameNl}}."
+      }
+    },
+    "associationGroups": [
+      1
+    ]
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "triggers": [],
+  "conditions": [],
+  "actions": [
+    {
+      "id": "ZW080-turn_alarm_on",
+      "title": {
+        "en": "Turn siren on",
+        "nl": "Zet sirene aan"
+      },
+      "args": []
+    },
+    {
+      "id": "ZW080-turn_alarm_off",
+      "title": {
+        "en": "Turn siren off",
+        "nl": "Zet sirene uit"
+      },
+      "args": []
+    },
+    {
+      "id": "ZW080-set_alarm",
+      "title": {
+        "en": "Set alarm sound",
+        "nl": "Zet alarm geluid"
+      },
+      "args": [
+        {
+          "name": "sound",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "256",
+              "label": {
+                "en": "Sound 1",
+                "nl": "Geluid 1"
+              }
+            },
+            {
+              "id": "512",
+              "label": {
+                "en": "Sound 2",
+                "nl": "Geluid 2"
+              }
+            },
+            {
+              "id": "768",
+              "label": {
+                "en": "Sound 3",
+                "nl": "Geluid 3"
+              }
+            },
+            {
+              "id": "1024",
+              "label": {
+                "en": "Sound 4",
+                "nl": "Geluid 4"
+              }
+            },
+            {
+              "id": "1280",
+              "label": {
+                "en": "Sound 5",
+                "nl": "Geluid 5"
+              }
+            }
+          ]
+        },
+        {
+          "name": "volume",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "1",
+              "label": {
+                "en": "Low volume",
+                "nl": "Laag volume"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Middle volume",
+                "nl": "Middel volume"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "High volume",
+                "nl": "Hoog volume"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "ZW129",
+  "name": {
+    "en": "Wallmote Duo"
+  },
+  "class": "button",
+  "capabilities": [
+    "measure_battery",
+    "alarm_battery"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": 134,
+    "productTypeId": [
+      2,
+      258,
+      513,
+      514
+    ],
+    "productId": [
+      129
+    ],
+    "zwaveAllianceProductId": 2234,
+    "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/2234/Aeon Labs WallMote manual.pdf",
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Secure inclusion: Double press the action button on the {{driverNameEn}}. Non-secure inclusion: Single press the action button on the {{driverNameEn}}.",
+        "nl": "Beveiligd toevoegen: Druk tweemaal op de actie knop op de {{driverNameNl}}. Onbeveiligd toevoegen: Druk eenmaal op de actie knop op de {{driverNameNl}}."
+      }
+    },
+    "unlearnmode": {
+      "instruction": {
+        "en": "Press the action button on the {{driverNameEn}}.",
+        "nl": "Druk op de actie knop op de {{driverNameNl}}."
+      }
+    },
+    "associationGroups": [
+      1
+    ],
+    "associationGroupsOptions": {
+      "1": {
+        "hint": {
+          "en": "This is the Z-Wave Lifeline group, it is not recommended to change this.",
+          "nl": "Dit is de Z-Wave Lifeline groep, het is niet aangeraden deze te veranderen."
+        }
+      },
+      "2": {
+        "hint": {
+          "en": "Devices here will receive on and off commands from the left touch part.",
+          "nl": "Apparaten hier zullen de aan en uit commando's krijgen van het linkse aanraak gedeelte."
+        }
+      },
+      "3": {
+        "hint": {
+          "en": "Devices here will receive dimming commands from the left touch part.",
+          "nl": "Apparaten hier zullen de dimmen commando's krijgen van het linkse aanraak gedeelte."
+        }
+      },
+      "4": {
+        "hint": {
+          "en": "Devices here will receive on and off commands from the right touch part.",
+          "nl": "Apparaten hier zullen de aan en uit commando's krijgen van het rechtse aanraak gedeelte."
+        }
+      },
+      "5": {
+        "hint": {
+          "en": "Devices here will receive dimming commands from the right touch part.",
+          "nl": "Apparaten hier zullen de dimmen commando's krijgen van het rechtse aanraak gedeelte."
+        }
+      }
+    },
+    "defaultConfiguration": [
+      {
+        "id": 4,
+        "size": 1,
+        "value": 3
+      }
+    ]
+  }
+}

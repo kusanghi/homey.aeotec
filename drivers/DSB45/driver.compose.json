@@ -1,0 +1,41 @@
+{
+  "id": "DSB45",
+  "name": {
+    "en": "Water Sensor"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "measure_battery",
+    "alarm_water"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": 134,
+    "productTypeId": [
+      2
+    ],
+    "productId": [
+      45
+    ],
+    "learnmode": {
+      "image": "/drivers/DSB45/assets/learnmode.svg",
+      "instruction": {
+        "en": "Press the action button on the {{driverNameEn}}",
+        "nl": "Druk op de actie knop op de {{driverNameNl}}"
+      }
+    },
+    "associationGroups": [
+      1
+    ],
+    "defaultConfiguration": [
+      {
+        "id": 121,
+        "size": 4,
+        "value": 299
+      }
+    ]
+  }
+}

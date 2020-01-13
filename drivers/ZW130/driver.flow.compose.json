@@ -1,0 +1,159 @@
+{
+  "triggers": [
+    {
+      "id": "zw130_scene",
+      "title": {
+        "en": "Scene is activated",
+        "nl": "Scene is geactiveerd"
+      },
+      "args": [
+        {
+          "name": "button",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "1",
+              "label": {
+                "en": "Top left",
+                "nl": "Links boven"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Top right",
+                "nl": "Rechts boven"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "Bottom left",
+                "nl": "Links onder"
+              }
+            },
+            {
+              "id": "4",
+              "label": {
+                "en": "Bottom right",
+                "nl": "Rechts onder"
+              }
+            }
+          ]
+        },
+        {
+          "name": "scene",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "Key Pressed 1 time",
+              "label": {
+                "en": "Pressed 1x",
+                "nl": "1x gedrukt"
+              }
+            },
+            {
+              "id": "Key Held Down",
+              "label": {
+                "en": "Hold press (5x a second)",
+                "nl": "Lang drukken (5x per seconde)"
+              }
+            },
+            {
+              "id": "Key Released",
+              "label": {
+                "en": "Press released",
+                "nl": "Drukken losgelaten"
+              }
+            },
+            {
+              "id": "Key Slide Up",
+              "label": {
+                "en": "Slide Up",
+                "nl": "Omhoog Schuiven"
+              }
+            },
+            {
+              "id": "Key Slide Down",
+              "label": {
+                "en": "Slide Down",
+                "nl": "Omlaag schuiven"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zw130_dim",
+      "title": {
+        "en": "Dim level has been sent",
+        "nl": "Het helderheidsniveau is verzonden"
+      },
+      "hint": {
+        "en": "The dim level is send when you slide your finger over the wallmote. The brightness level will be the height you stopped at (full height of the {{driverNameEn}}).",
+        "nl": "Het helderheidsniveau wordt verzonden bij het schuiven van de vinger over de wallmote. Het helderheidsniveau is de hoogte waar je stopt (volle hoogte van de {{driverNameNl}})."
+      },
+      "tokens": [
+        {
+          "name": "dim",
+          "type": "number",
+          "title": {
+            "en": "level",
+            "nl": "niveau"
+          },
+          "example": 0.5
+        }
+      ],
+      "args": [
+        {
+          "name": "button",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "1",
+              "label": {
+                "en": "Top left",
+                "nl": "Links boven"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Top right",
+                "nl": "Rechts boven"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "Bottom left",
+                "nl": "Links onder"
+              }
+            },
+            {
+              "id": "4",
+              "label": {
+                "en": "Bottom right",
+                "nl": "Rechts onder"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zw130_battery_full",
+      "title": {
+        "en": "Battery fully charged",
+        "nl": "Batterij volledig opgeladen"
+      },
+      "hint": {
+        "en": "This card will only trigger if the {{driverNameEn}} has been included as secure.",
+        "nl": "Deze kaart zal alleen activeren als de {{driverNameNl}} beveiligd is toevoegd."
+      }
+    }
+  ],
+  "condition": [],
+  "actions": []
+}

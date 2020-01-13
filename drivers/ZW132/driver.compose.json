@@ -1,0 +1,80 @@
+{
+  "id": "ZW132",
+  "name": {
+    "en": "Dual Nano Switch (ZW132)"
+  },
+  "class": "light",
+  "capabilities": [
+    "measure_power",
+    "meter_power",
+    "onoff"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": 134,
+    "productTypeId": [
+      3,
+      515
+    ],
+    "productId": [
+      132
+    ],
+    "zwaveAllianceProductId": 2286,
+    "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/2286/Oomi Dual In-Wall Switch manual.pdf",
+    "learnmode": {
+      "instruction": {
+        "en": "Press the action button on the back of the {{driverNameEn}}.",
+        "nl": "Druk op de actie knop op de achterkant van de {{driverNameNl}}."
+      }
+    },
+    "associationGroups": [
+      1
+    ],
+    "defaultConfiguration": [
+      {
+        "id": 80,
+        "value": 2,
+        "size": 1
+      },
+      {
+        "id": 90,
+        "size": 1,
+        "value": 1
+      },
+      {
+        "id": 92,
+        "size": 1,
+        "value": 30
+      }
+    ],
+    "multiChannelNodes": {
+      "1": {
+        "name": {
+          "en": "Dual Nano Switch 1"
+        },
+        "icon": "{{driverAssetsPath}}/icon.svg",
+        "class": "light",
+        "capabilities": [
+          "measure_power",
+          "meter_power",
+          "onoff"
+        ]
+      },
+      "2": {
+        "name": {
+          "en": "Dual Nano Switch 2"
+        },
+        "icon": "{{driverAssetsPath}}/icon.svg",
+        "class": "light",
+        "capabilities": [
+          "measure_power",
+          "meter_power",
+          "onoff"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+[
+  {
+    "id": "1",
+    "type": "radio",
+    "label": {
+      "en": "Operation mode",
+      "nl": "Werking"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines whether the alarm goes off when water is detected or when no water is detected.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het alarm afgaat als er water gedetecteert wordt of wanneer er geen water gedetecteert wordt."
+    },
+    "zwave": {
+      "index": 1,
+      "size": 1
+    },
+    "value": "0",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Warn when water detected",
+          "nl": "Waarschuw als er water gedetecteert wordt"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Warn when no water detected",
+          "nl": "Waarschuw als er geen water gedetecteert wordt"
+        }
+      }
+    ]
+  },
+  {
+    "id": "121",
+    "type": "dropdown",
+    "label": {
+      "en": "Information to send",
+      "nl": "Te versturen informatie"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines what kind of report will be sent to the associated nodes when the {{driverNameEn}} detects water.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt wat voor soort rapport er wordt verzonder naar de geassocieerde apparaten wanneer de {{driverNameEn}} water detecteert."
+    },
+    "zwave": {
+      "index": 121,
+      "size": 4
+    },
+    "value": "299",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Nothing",
+          "nl": "Niets"
+        }
+      },
+      {
+        "id": "298",
+        "label": {
+          "en": "Water detect",
+          "nl": "Water detectie"
+        }
+      },
+      {
+        "id": "299",
+        "label": {
+          "en": "Water detect and battery",
+          "nl": "Water detectie and batterij"
+        }
+      }
+    ]
+  }
+]

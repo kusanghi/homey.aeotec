@@ -1,0 +1,35 @@
+{
+  "id": "ZW117",
+  "name": {
+    "en": "Range Extender 6"
+  },
+  "class": "other",
+  "capabilities": [],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": 134,
+    "productTypeId": [
+      4,
+      516,
+      2564
+    ],
+    "productId": [
+      117
+    ],
+    "zwaveAllianceProductId": 2520,
+    "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/2520/Range Extender 6 manual.pdf",
+    "learnmode": {
+      "image": "/drivers/ZW117/assets/learnmode.svg",
+      "instruction": {
+        "en": "Press the action button on the {{driverNameEn}}. For secure pairing press the action button twice.",
+        "nl": "Druk op de actie knop op de {{driverNameNl}}. Druk tweemaal op de actie knop om het apparaat beveiligd te koppelen."
+      }
+    },
+    "associationGroups": [
+      1
+    ]
+  }
+}

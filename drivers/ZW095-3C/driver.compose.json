@@ -1,0 +1,35 @@
+{
+  "id": "ZW095-C",
+  "name": {
+        "en": "Home Energy Meter Gen5"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "measure_current",
+    "measure_power",
+    "meter_power",
+    "measure_voltage"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": 134,
+    "productTypeId": [
+      2
+    ],
+    "productId": [
+      95
+    ],
+    "learnmode": {
+      "instruction": {
+        "en": "Press the action button on the {{driverNameEn}}",
+        "nl": "Druk op de actie knop op de {{driverNameNl}}"
+      }
+    },
+    "associationGroups": [
+      1
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "id": "ZW130",
+  "name": {
+    "en": "Wallmote Quad"
+  },
+  "class": "button",
+  "capabilities": [
+    "measure_battery",
+    "alarm_battery"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": 134,
+    "productTypeId": [
+      2,
+      258,
+      513,
+      514
+    ],
+    "productId": [
+      130
+    ],
+    "zwaveAllianceProductId": 2153,
+    "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/2153/Aeon Labs WallMote Quad manual.pdf",
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Secure inclusion: Double press the action button on the {{driverNameEn}}. Non-secure inclusion: Single press the action button on the {{driverNameEn}}.",
+        "nl": "Beveiligd toevoegen: Druk tweemaal op de actie knop op de {{driverNameNl}}. Onbeveiligd toevoegen: Druk eenmaal op de actie knop op de {{driverNameNl}}."
+      }
+    },
+    "unlearnmode": {
+      "instruction": {
+        "en": "Press the action button on the {{driverNameEn}}",
+        "nl": "Druk op de actie knop op de {{driverNameNl}}"
+      }
+    },
+    "associationGroups": [
+      1
+    ],
+    "associationGroupsOptions": {
+      "1": {
+        "hint": {
+          "en": "This is the Z-Wave Lifeline group, it is not recommended to change this.",
+          "nl": "Dit is de Z-Wave Lifeline groep, het is niet aangeraden deze te veranderen."
+        }
+      },
+      "2": {
+        "hint": {
+          "en": "Devices here will receive on and off commands from the topleft touch part.",
+          "nl": "Apparaten hier zullen de aan en uit commando's krijgen van het linksbovenste aanraak gedeelte."
+        }
+      },
+      "3": {
+        "hint": {
+          "en": "Devices here will receive dimming commands from the topleft touch part.",
+          "nl": "Apparaten hier zullen de dimmen commando's krijgen van het linksbovenste aanraak gedeelte."
+        }
+      },
+      "4": {
+        "hint": {
+          "en": "Devices here will receive on and off commands from the topright touch part.",
+          "nl": "Apparaten hier zullen de aan en uit commando's krijgen van het rechtsbovenste aanraak gedeelte."
+        }
+      },
+      "5": {
+        "hint": {
+          "en": "Devices here will receive dimming commands from the topright touch part.",
+          "nl": "Apparaten hier zullen de dimmen commando's krijgen van het rechtsbovenste aanraak gedeelte."
+        }
+      },
+      "6": {
+        "hint": {
+          "en": "Devices here will receive on and off commands from the bottomleft touch part.",
+          "nl": "Apparaten hier zullen de aan en uit commando's krijgen van het linksonderste aanraak gedeelte."
+        }
+      },
+      "7": {
+        "hint": {
+          "en": "Devices here will receive dimming commands from the bottomleft touch part.",
+          "nl": "Apparaten hier zullen de dimmen commando's krijgen van het linksonderste aanraak gedeelte."
+        }
+      },
+      "8": {
+        "hint": {
+          "en": "Devices here will receive on and off commands from the bottomright touch part.",
+          "nl": "Apparaten hier zullen de aan en uit commando's krijgen van het rechtsonderste aanraak gedeelte."
+        }
+      },
+      "9": {
+        "hint": {
+          "en": "Devices here will receive dimming commands from the bottomright touch part.",
+          "nl": "Apparaten hier zullen de dimmen commando's krijgen van het rechtsonderste aanraak gedeelte."
+        }
+      }
+    },
+    "defaultConfiguration": [
+      {
+        "id": 4,
+        "size": 1,
+        "value": 3
+      }
+    ]
+  }
+}

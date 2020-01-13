@@ -1,0 +1,19 @@
+[
+  {
+    "id": "poll_interval",
+    "type": "number",
+    "label": {
+      "en": "Poll Interval",
+      "nl": "Poll Interval"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the amount of seconds between asking the device for a status update.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het aantal seconden tussen het opvragen van een status update aan het apparaat."
+    },
+    "attr": {
+      "min": 60,
+      "max": 3600
+    },
+    "value": 240
+  }
+]

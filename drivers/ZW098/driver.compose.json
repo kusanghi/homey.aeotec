@@ -1,0 +1,69 @@
+{
+  "id": "ZW098",
+  "name": {
+    "en": "LED Bulb",
+    "nl": "LED lamp"
+  },
+  "class": "light",
+  "capabilities": [
+    "light_saturation",
+    "light_temperature",
+    "dim",
+    "light_hue",
+    "light_mode",
+    "onoff"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": 134,
+    "productTypeId": [
+      3,
+      515
+    ],
+    "productId": [
+      98
+    ],
+    "zwaveAllianceProductId": 1851,
+    "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/1851/LED Bulb manual.pdf",
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Quickly turn the {{driverNameEn}} off and on again. For secure pairing quickly turn the {{driverNameEn}} off and on 5 times.",
+        "nl": "Schakel de {{driverNameNl}} snel uit en aan. Voor beveiligd koppelen schakel de {{driverNameNl}} 5 keer snel uit en aan."
+      }
+    },
+    "unlearnmode": {
+      "instruction": {
+        "en": "Quickly turn the {{driverNameEn}} off and on again 5 times.",
+        "nl": "Schakel de {{driverNameNl}} vijf maal snel uit en aan."
+      }
+    },
+    "associationGroups": [
+      2
+    ],
+    "associationGroupsOptions": {
+      "1": {
+        "hint": {
+          "en": "The association group 1 is the Z-Wave Lifeline group. The Hail CC and Basic Report CC (configurable) will be sent to the associated nodes.",
+          "nl": "De 1e associatie groep is de Z-Wave levenslijn groep. De Hail CC en Basic Report CC (configureerbaar) worden verzonden naar de apparaten in deze groep."
+        }
+      },
+      "2": {
+        "hint": {
+          "en": "Forwarding group for all commands sent to the {{driverNameEn}} by the main controller.",
+          "nl": "Doorstuur groep voor alle commando's verstuurd naar de {{driverNameNl}} door de main controller."
+        }
+      }
+    },
+    "defaultConfiguration": [
+      {
+        "id": 80,
+        "value": 2,
+        "size": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,244 @@
+[
+  {
+    "id": "20",
+    "type": "dropdown",
+    "label": {
+      "en": "Configure the output load status after re-power",
+      "nl": "Zet na een stroomonderbreking deze status"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the behaviour of the device after power loss.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het gedrag van het apparaat na stroom uitval."
+    },
+    "zwave": {
+      "index": 20,
+      "size": 1
+    },
+    "value": "0",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Status before re-power",
+          "nl": "Status voor stroomonderbreking"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Always on",
+          "nl": "Altijd aan"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "Always off",
+          "nl": "Altijd uit"
+        }
+      }
+    ]
+  },
+  {
+    "id": "81",
+    "type": "dropdown",
+    "label": {
+      "en": "Reports to association group 3",
+      "nl": "Metingen naar associatie groep 3"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines which reports are send to the devices in association group 3.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt welke rapporten er worden verstuurd naar de apparaten in de 3e associatie groep."
+    },
+    "zwave": {
+      "index": 81,
+      "size": 1
+    },
+    "value": "1",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Nothing",
+          "nl": "Niets"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Basic Set",
+          "nl": "Basic Set"
+        }
+      }
+    ]
+  },
+  {
+    "id": "82",
+    "type": "dropdown",
+    "label": {
+      "en": "Reports to association group 4",
+      "nl": "Metingen naar associatie groep 4"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines which reports are send to the devices in association group 4.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt welke rapporten er worden verstuurd naar de apparaten in de 4e associatie groep."
+    },
+    "zwave": {
+      "index": 82,
+      "size": 1
+    },
+    "value": "1",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Nothing",
+          "nl": "Niets"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Basic Set",
+          "nl": "Basic Set"
+        }
+      }
+    ]
+  },
+  {
+    "id": "91",
+    "type": "number",
+    "label": {
+      "en": "Minimum wattage change needed before an update report is send",
+      "nl": "Minimale verandering in wattage nodig voor het verzenden van een update"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the minimum value change before a report is being send to Homey.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de minimale waardeverandering voordat er een rapport wordt verzonden naar Homey."
+    },
+    "zwave": {
+      "index": 91,
+      "size": 2
+    },
+    "attr": {
+      "min": 0,
+      "max": 32000
+    },
+    "value": 25
+  },
+  {
+    "id": "92",
+    "type": "number",
+    "label": {
+      "en": "Minimum wattage change (%) needed before an update report is send",
+      "nl": "Minimale verandering in wattage (%) nodig voor het verzenden van een update"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the minimum percentage change before a report is being send to Homey.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de minimale verandering in percentage voordat er een rapport wordt verzonden naar Homey"
+    },
+    "zwave": {
+      "index": 92,
+      "size": 2
+    },
+    "attr": {
+      "min": 0,
+      "max": 100
+    },
+    "value": 30
+  },
+  {
+    "id": "120",
+    "type": "dropdown",
+    "label": {
+      "en": "Switch type input 1",
+      "nl": "Schakelaar type input 1"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the input device mode for input 1.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de modus voor het invoer apparaat verbonden aan ingang 1."
+    },
+    "zwave": {
+      "index": 120,
+      "size": 1
+    },
+    "value": "0",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Automatic",
+          "nl": "Automatisch"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Momentary switch",
+          "nl": "Pulsdruk schakelaar"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "3-way switch mode",
+          "nl": "3-way schakel modus"
+        }
+      },
+      {
+        "id": "3",
+        "label": {
+          "en": "2-state switch mode",
+          "nl": "2-state schakel modus"
+        }
+      }
+    ]
+  },
+  {
+    "id": "121",
+    "type": "dropdown",
+    "label": {
+      "en": "Switch type input 2",
+      "nl": "Schakelaar type input 2"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the input device mode for input 2.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de modus voor het invoer apparaat verbonden aan ingang 2."
+    },
+    "zwave": {
+      "index": 121,
+      "size": 1
+    },
+    "value": "0",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Automatic",
+          "nl": "Automatisch"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Momentary switch",
+          "nl": "Pulsdruk schakelaar"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "3-way switch mode",
+          "nl": "3-way schakel modus"
+        }
+      },
+      {
+        "id": "3",
+        "label": {
+          "en": "2-state switch mode",
+          "nl": "2-state schakel modus"
+        }
+      }
+    ]
+  }
+]

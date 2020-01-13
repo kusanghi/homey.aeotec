@@ -1,0 +1,66 @@
+{
+  "id": "ZW080",
+  "name": {
+    "en": "Siren Gen5",
+    "nl": "Sirene Gen5"
+  },
+  "class": "other",
+  "capabilities": [
+    "onoff"
+  ],
+  "mobile": {
+    "components": [
+      {
+        "capabilities": [
+          "onoff"
+        ],
+        "id": "icon"
+      },
+      {
+        "capabilities": [
+          "onoff"
+        ],
+        "id": "toggle"
+      }
+    ]
+  },
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.jpg",
+    "small": "{{driverAssetsPath}}/images/small.jpg"
+  },
+  "zwave": {
+    "manufacturerId": 134,
+    "productTypeId": [
+      4,
+      516
+    ],
+    "productId": [
+      80
+    ],
+    "zwaveAllianceProductId": 1141,
+    "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/1141/Siren Gen5 Manual.pdf",
+    "learnmode": {
+      "instruction": {
+        "en": "Press the action button on the {{driverNameEn}}",
+        "nl": "Druk op de actie knop op de {{driverNameNl}}"
+      }
+    },
+    "associationGroups": [
+      1
+    ],
+    "associationGroupsOptions": {
+      "1": {
+        "hint": {
+          "en": "Group 1 is assigned to the Lifeline association group and every device has 5 nodes to associate.\nWhen the Siren is received the commands sent by controller to be turned on or off, the Siren will send a basic report of its status to the nodes in association group 1. To change what kind of signal is sent to the nodes in group 1, please see the detailed description of configuration parameter 80.\n"
+        }
+      }
+    },
+    "defaultConfiguration": [
+      {
+        "id": 80,
+        "size": 1,
+        "value": 2
+      }
+    ]
+  }
+}

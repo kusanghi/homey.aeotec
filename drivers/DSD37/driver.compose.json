@@ -1,0 +1,28 @@
+{
+  "id": "DSD37",
+  "name": {
+    "en": "Repeater"
+  },
+  "zwave": {
+    "manufacturerId": 134,
+    "productTypeId": 4,
+    "productId": 37,
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Press the button on your {{driverNameEn}}",
+        "nl": "Druk op de knop van de {{driverNameNl}}"
+      }
+    },
+    "associationGroups": [
+      1
+    ]
+  },
+  "class": "other",
+  "capabilities": [
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  }
+}

@@ -1,0 +1,202 @@
+[
+  {
+    "id": "20",
+    "type": "dropdown",
+    "label": {
+      "en": "Configure the output load status after re-power",
+      "nl": "Zet na een stroomonderbreking deze status"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the behaviour after power was disconnected.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het gedrag nadat de stroomtoevoer is verbroken."
+    },
+    "zwave": {
+      "index": 20,
+      "size": 1
+    },
+    "value": "0",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Status before re-power",
+          "nl": "Status voor stroomonderbreking"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Always on",
+          "nl": "Altijd aan"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "Always off",
+          "nl": "Altijd uit"
+        }
+      }
+    ]
+  },
+  {
+    "id": "81",
+    "type": "dropdown",
+    "label": {
+      "en": "Reports to association group 3",
+      "nl": "Metingen naar associatie groep 3"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines what reports are sent to association group 3.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt welke raporten er worden verzonden naar associatie groep 3."
+    },
+    "zwave": {
+      "index": 81,
+      "size": 1
+    },
+    "value": "1",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Nothing",
+          "nl": "Niets"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Basic Set",
+          "nl": "Basic Set"
+        }
+      }
+    ]
+  },
+  {
+    "id": "82",
+    "type": "dropdown",
+    "label": {
+      "en": "Reports to association group 4",
+      "nl": "Metingen naar associatie groep 4"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines what reports are sent to association group 4.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt welke raporten er worden verzonden naar associatie groep 4."
+    },
+    "zwave": {
+      "index": 82,
+      "size": 1
+    },
+    "value": "1",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Nothing",
+          "nl": "Niets"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Basic Set",
+          "nl": "Basic Set"
+        }
+      }
+    ]
+  },
+  {
+    "id": "120",
+    "type": "dropdown",
+    "label": {
+      "en": "Switch type input 1",
+      "nl": "Schakelaar type input 1"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines what type of input is connected to input 1.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt welk type input apparaat er is verbonden op input 1."
+    },
+    "zwave": {
+      "index": 120,
+      "size": 1
+    },
+    "value": "0",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Automatic",
+          "nl": "Automatisch"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Momentary switch",
+          "nl": "Pulsdruk schakelaar"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "3-way switch mode",
+          "nl": "3-way schakel modus"
+        }
+      },
+      {
+        "id": "3",
+        "label": {
+          "en": "2-state switch mode",
+          "nl": "2-state schakel modus"
+        }
+      }
+    ]
+  },
+  {
+    "id": "121",
+    "type": "dropdown",
+    "label": {
+      "en": "Switch type input 2",
+      "nl": "Schakelaar type input 2"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines what type of input is connected to input 2.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt welk type input apparaat er is verbonden op input 2."
+    },
+    "zwave": {
+      "index": 121,
+      "size": 1
+    },
+    "value": "0",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Automatic",
+          "nl": "Automatisch"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Momentary switch",
+          "nl": "Pulsdruk schakelaar"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "3-way switch mode",
+          "nl": "3-way schakel modus"
+        }
+      },
+      {
+        "id": "3",
+        "label": {
+          "en": "2-state switch mode",
+          "nl": "2-state schakel modus"
+        }
+      }
+    ]
+  }
+]

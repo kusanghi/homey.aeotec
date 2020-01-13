@@ -1,0 +1,50 @@
+{
+  "id": "DSC10",
+  "name": {
+    "en": "Heavy Duty Smart Switch"
+  },
+  "class": "socket",
+  "capabilities": [
+    "measure_power",
+    "meter_power",
+    "onoff"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": 134,
+    "productTypeId": [
+      3
+    ],
+    "productId": [
+      78
+    ],
+    "zwaveAllianceProductId": 1142,
+    "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/1142/Heavy Duty Smart Switch Gen5 Manual.pdf",
+    "learnmode": {
+      "instruction": {
+        "en": "Press the action button on the {{driverNameEn}}.",
+        "nl": "Druk op de actie knop op de {{driverNameNl}}."
+      }
+    },
+    "associationGroups": [
+      1
+    ],
+    "associationGroupsOptions": {
+      "1": {
+        "hint": {
+          "en": "Group 1 is assigned to the Lifeline association group and every device has 5 nodes to associate.\nWhen the switch is turned on or off using the action button, the switch will send a basic report of its status to the nodes in association group 1. To change what kind of signal is sent to the nodes in group 1, please see the detailed description of configuration parameter 80.\n"
+        }
+      }
+    },
+    "defaultConfiguration": [
+      {
+        "id": 101,
+        "size": 4,
+        "value": 12
+      }
+    ]
+  }
+}

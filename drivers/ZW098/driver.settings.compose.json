@@ -1,0 +1,20 @@
+[
+  {
+    "id": "34",
+    "type": "checkbox",
+    "label": {
+      "en": "Enable external switch to turn on/off the bulb",
+      "nl": "Laat externe knop de lamp aan en uit zetten"
+    },
+    "value": false
+  },
+  {
+    "id": "35",
+    "type": "checkbox",
+    "label": {
+      "en": "Enable external switch to change the color of the bulb",
+      "nl": "Laat externe knop de kleur van de lamp aanpassen"
+    },
+    "value": true
+  }
+]

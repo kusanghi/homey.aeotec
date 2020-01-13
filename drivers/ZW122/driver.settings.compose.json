@@ -1,0 +1,157 @@
+[
+  {
+    "id": "86",
+    "type": "checkbox",
+    "label": {
+      "en": "Enable the acoustic alarm",
+      "nl": "Schakel het akoestische alarm in"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not the acoustic alarm is enabled.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het akoestische alarm ingeschakeld is."
+    },
+    "zwave": {
+      "index": 86,
+      "size": 1
+    },
+    "value": true
+  },
+  {
+    "id": "87",
+    "type": "dropdown",
+    "label": {
+      "en": "Acoustic alarm triggers",
+      "nl": "Triggers voor het akoestische alarm"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines which events trigger the acoustic alarm.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt welke gebeurtenissen het akoestische alarm af laten gaan."
+    },
+    "zwave": {
+      "index": 87,
+      "size": 4
+    },
+    "values": [
+      {
+        "id": "1",
+        "label": {
+          "en": "On water leakage",
+          "nl": "Wanneer er water lekt"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "On device vibration",
+          "nl": "Wanneer het apparaat geschud wordt"
+        }
+      },
+      {
+        "id": "4",
+        "label": {
+          "en": "On device tilt",
+          "nl": "Wanneer het apparaat gekanteld wordt"
+        }
+      },
+      {
+        "id": "16",
+        "label": {
+          "en": "On temperature too low",
+          "nl": "Wanneer het apparaat te koud is"
+        }
+      },
+      {
+        "id": "32",
+        "label": {
+          "en": "On temperature too high",
+          "nl": "Wanneer het apparaat te warm is"
+        }
+      }
+    ],
+    "value": "1"
+  },
+  {
+    "id": "111",
+    "type": "number",
+    "label": {
+      "en": "Interval between reports",
+      "nl": "Rapportage interval"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the time between reports to associated devices.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de tijd tussen rapportages naar geassocieerde apparaten."
+    },
+    "zwave": {
+      "index": 111,
+      "size": 4
+    },
+    "attr": {
+      "min": 5,
+      "max": 2678400
+    },
+    "value": 5
+  },
+  {
+    "id": "201",
+    "type": "number",
+    "label": {
+      "en": "Temperature sensor calibration",
+      "nl": "Kalibratie temperatuursensor"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the value added to the measured temperature to get to an accurate reading.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de waarde die wordt opgeteld bij de gemeten waarde om tot een correcte meting uit te komen."
+    },
+    "zwave": {
+      "index": 201,
+      "size": 2
+    },
+    "attr": {
+      "min": -128,
+      "max": 127
+    },
+    "value": 0
+  },
+  {
+    "id": "50",
+    "type": "number",
+    "label": {
+      "en": "Low temperature threshold",
+      "nl": "Drempel lage temperatuur"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the temperature below which the low temperature alarm will be triggered.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de temperatuur waaronder het lage temperatuur alarm afgaat."
+    },
+    "zwave": {
+      "index": 50,
+      "size": 4
+    },
+    "attr": {
+      "min": 0,
+      "max": 2147483647
+    },
+    "value": 0
+  },
+  {
+    "id": "49",
+    "type": "number",
+    "label": {
+      "en": "High temperature threshold",
+      "nl": "Drempel hoge temperatuur"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the temperature above which the high temperature alarm will be triggered.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de temperatuur waarboven het hoge temperatuur alarm afgaat."
+    },
+    "zwave": {
+      "index": 49,
+      "size": 4
+    },
+    "attr": {
+      "min": 0,
+      "max": 2147483647
+    },
+    "value": 0
+  }
+]

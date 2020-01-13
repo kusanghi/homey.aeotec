@@ -1,0 +1,65 @@
+{
+  "id": "ZW100",
+  "name": {
+    "en": "Multisensor 6"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "measure_battery",
+    "alarm_motion",
+    "alarm_tamper",
+    "measure_temperature",
+    "measure_luminance",
+    "measure_humidity",
+    "measure_ultraviolet"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": 134,
+    "productTypeId": [
+      2,
+      514
+    ],
+    "productId": 100,
+    "zwaveAllianceProductId": 2714,
+    "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/2714/Aeon Labs MultiSensor 6 manual.pdf",
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Press the action button on your {{driverNameEn}}. For secure pairing press this button twice.",
+        "nl": "Druk op de actie knop op de {{driverNameNl}}. Voor beveiligd koppelen druk tweemaal op deze knop."
+      }
+    },
+    "associationGroups": [
+      1
+    ],
+    "associationGroupsOptions": {
+      "1": {
+        "hint": {
+          "en": "This is the lifeline, it is not recommended to remove Homey's id from this association group.",
+          "nl": "Dit is de levenslijn, het is niet aangeraden om Homey's zijn id te verwijderen uit deze associatie groep."
+        }
+      }
+    },
+    "defaultConfiguration": [
+      {
+        "id": 5,
+        "value": 2,
+        "size": 1
+      },
+      {
+        "id": 40,
+        "value": 1,
+        "size": 1
+      },
+      {
+        "id": 111,
+        "value": 600,
+        "size": 4
+      }
+    ]
+  }
+}

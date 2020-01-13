@@ -1,0 +1,149 @@
+[
+  {
+    "id": "1",
+    "value": true,
+    "label": {
+      "en": "Reported Sensor Binary values when opened/closed.",
+      "nl": "Gerapporteerde Sensor Binary waarde bij het openen/sluiten."
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines what value will be sent in the Sensor Binary report when the door is opened/closed.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt welke waarde er wordt verzonden in het Sensor Binary report wanneer de deur opent/sluit."
+    },
+    "zwave": {
+      "index": 1,
+      "size": 1
+    },
+    "type": "checkbox"
+  },
+  {
+    "id": "111",
+    "value": 0,
+    "label": {
+      "en": "Report interval for battery reports.",
+      "nl": "Rapportage interval voor batterijniveau."
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the time interval between battery reports.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de tijd tussen batterij rapportages."
+    },
+    "zwave": {
+      "index": 111,
+      "size": 4
+    },
+    "attr": {
+      "min": 0,
+      "max": 2147483647
+    },
+    "type": "number"
+  },
+  {
+    "id": "121",
+    "value": "256",
+    "label": {
+      "en": "On/off report command",
+      "nl": "Report bij aan/uit"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines what report will be sent when the sensor is triggered on/off.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt welk type report er wordt verzonden wanneer de sensor aan/uit geschakelt is."
+    },
+    "zwave": {
+      "index": 121,
+      "size": 4
+    },
+    "values": [
+      {
+        "id": "16",
+        "label": {
+          "en": "Basic Set CC is selected."
+        }
+      },
+      {
+        "id": "256",
+        "label": {
+          "en": "Sensor Binary report CC is selected."
+        }
+      },
+      {
+        "id": "272",
+        "label": {
+          "en": "Basic Set CC and Sensor Binary report CC are selected."
+        }
+      }
+    ],
+    "type": "dropdown"
+  },
+  {
+    "id": "2",
+    "value": true,
+    "label": {
+      "en": "Enable 10 minute wake-up on re-power.",
+      "nl": "Schakel 10 minuten wakker zijn bij stroomherstel in."
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not the device will stay awake for 10 minutes after re-power.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het apparaat na stroomherstel 10 minuten in wakker modus blijft."
+    },
+    "zwave": {
+      "index": 2,
+      "size": 1
+    },
+    "type": "checkbox"
+  },
+  {
+    "id": "255",
+    "value": false,
+    "label": {
+      "en": "Reset the sensor.",
+      "nl": "Reset de sensor."
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) triggers a reset of the sensor.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) veroorzaakt een reset van de sensor."
+    },
+    "zwave": {
+      "index": 255,
+      "size": 4
+    },
+    "type": "checkbox"
+  },
+  {
+    "id": "3",
+    "value": true,
+    "label": {
+      "en": "Reported Basic Set values when opened/closed.",
+      "nl": "Gerapporteerde Basic Set waarde bij het openen/sluiten."
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines what value will be sent in the Basic Set report when the door is opened/closed.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt welke waarde er wordt verzonden in het Basic Set report wanneer de deur opent/sluit."
+    },
+    "zwave": {
+      "index": 3,
+      "size": 1
+    },
+    "type": "checkbox"
+  },
+  {
+    "id": "39",
+    "value": 10,
+    "label": {
+      "en": "Low battery value",
+      "nl": "Laag batterij niveau"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the low battery value.",
+      "nl": "Deze parameter ({{zwaveParamtererIn dex}}) bepaalt het lage batterij niveau."
+    },
+    "zwave": {
+      "index": 39,
+      "size": 1
+    },
+    "attr": {
+      "min": 10,
+      "max": 50
+    },
+    "type": "number"
+  }
+]

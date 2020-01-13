@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="960px" height="263px" viewBox="0 0 960 263" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>pair_sensor_Door-Windows-7</title>
+<style type="text/css">
+.blink_5 {
+	animation: blink 7s infinite;
+}
+
+@keyframes blink {
+	/* 7s, 2 seconds for move, 5 seconds for blink &gt; 10 pieces */ 
+	0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% { 
+		fill: rgba(255,255,255,0);
+	}
+	55%, 65%, 75%, 85%, 95%{
+		fill: #0074CC;
+	}
+}
+.move {
+	animation: move 7s infinite;
+}
+
+@keyframes move {
+	/* 7s, 2 seconds for move, 5 seconds for blink */ 
+	0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% { 
+		transform: translate3d(0px, 0px, 0px);
+	}
+	15%, 25%, 35%{
+		transform: translate3d(0px, 10px, 0px);
+	}
+}	
+
+</style>
+    <g id="pair_sensor_Door-Windows-7" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path class="move" d="M664,21 L656,21 L656,5 L664,5 L664,21 Z" id="Combined-Shape" fill="#0074CC"/>
+        <path class="move" d="M670,21 L664,21 L664,5 L656,5 L656,21 L650,21 L650,2 C650,0.343145751 651.343146,-1 653,-1 L667,-1 C668.656854,-1 670,0.343145751 670,2 L670,21 Z" id="Combined-Shape" fill="#000000" fill-rule="nonzero"/>
+        <path d="M811.5,251 L811.5,33 L532.5,33 L532.5,251 L811.5,251 Z M817.5,251 L896,251 C924.166522,251 947,228.166522 947,200 L947,84 C947,55.8334778 924.166522,33 896,33 L817.5,33 L817.5,251 Z M526.5,251 L526.5,33 L65,33 C64.1617799,33 63.328283,33.0202219 62.4999703,33.0602044 L62.5,250.939797 C63.328283,250.979778 64.1617799,251 65,251 L526.5,251 Z M56.5,250.294853 L56.5,33.7051467 C32.3794366,37.7518105 14,58.7295315 14,84 L14,200 C14,225.270468 32.3794366,246.248189 56.5,250.294853 Z M65,21 L896,21 C930.793939,21 959,49.2060608 959,84 L959,200 C959,234.793939 930.793939,263 896,263 L65,263 C30.2060608,263 2,234.793939 2,200 L2,84 C2,49.2060608 30.2060608,21 65,21 Z M603,166 C589.745166,166 579,155.254834 579,142 C579,128.745166 589.745166,118 603,118 C616.254834,118 627,128.745166 627,142 C627,155.254834 616.254834,166 603,166 Z M603,160 C612.941125,160 621,151.941125 621,142 C621,132.058875 612.941125,124 603,124 C593.058875,124 585,132.058875 585,142 C585,151.941125 593.058875,160 603,160 Z" id="Combined-Shape" fill="#000000" fill-rule="nonzero"/>
+        <circle class="blink_5" id="Oval" fill="rgba(255,255,255,0);" cx="603" cy="142" r="16"/>
+    </g>
+</svg>

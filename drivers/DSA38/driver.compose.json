@@ -1,0 +1,38 @@
+{
+  "id": "SDA38",
+  "name": {
+    "en": "Panic Button"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "measure_battery"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": 134,
+    "productTypeId": [
+      1
+    ],
+    "productId": [
+      38
+    ],
+    "zwaveAllianceProductId": 1284,
+    "learnmode": {
+      "instruction": {
+        "en": "Press the \"Learn\" button on the {{driverNameEn}}.",
+        "nl": "Druk de \"Learn\" knop op de {{driverNameNl}} in."
+      }
+    },
+    "associationGroups": [ 1 ],
+    "defaultConfiguration": [
+      {
+        "id": 250,
+        "size": 1,
+        "value": 1
+      }
+    ]
+  }
+}

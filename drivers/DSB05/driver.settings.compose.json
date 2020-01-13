@@ -1,0 +1,271 @@
+[
+  {
+    "id": "2",
+    "type": "checkbox",
+    "label": {
+      "en": "Wake up for 10 minutes when batteries are inserted",
+      "nl": "Maak wakker voor 10 minuten nadat batterijen zijn ingevoegd"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not the device wakes up for 10 minutes when batteries are inserted.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het apparaat 10 minuten wakker blijft wanneer er batterijen worden geplaatst."
+    },
+    "zwave": {
+      "index": 2,
+      "size": 1
+    },
+    "value": false
+  },
+  {
+    "id": "3",
+    "type": "number",
+    "label": {
+      "en": "No motion detection timeout",
+      "nl": "Geen beweging gedetecteerd na"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines for how long the motion detection alarm will stay on after detection.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaatl voor hoe lang het bewegingsalarm actief blijft nadat er beweging is gedetecteerd."
+    },
+    "zwave": {
+      "index": 3,
+      "size": 2
+    },
+    "attr": {
+      "min": 1,
+      "max": 15300
+    },
+    "value": 240
+
+  },
+  {
+    "id": "4",
+    "type": "checkbox",
+    "label": {
+      "en": "Enable motion sensor",
+      "nl": "Schakel bewegingsdetectie in"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not the device detects motion.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het apparaat beweging detecteert."
+    },
+    "zwave": {
+      "index": 4,
+      "size": 1
+    },
+    "value": true
+  },
+  {
+    "id": "102",
+    "type": "dropdown",
+    "label": {
+      "en": "Information reports send to association group 2",
+      "nl": "Informatie updates naar associatie groep 2"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines what information is sent to the devices in association group 2.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt welke informatie er wordt verstuurd naar de apparaten in de 2e associatie groep."
+    },
+    "zwave": {
+      "index": 102,
+      "size": 4
+    },
+    "value": "0",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Nothing",
+          "nl": "Geen"
+        }
+      },
+      {
+        "id": "33",
+        "label": {
+          "en": "Battery and temperature",
+          "nl": "Batterij en temperatuur"
+        }
+      },
+      {
+        "id": "65",
+        "label": {
+          "en": "Battery and luminosity",
+          "nl": "Batterij en lichtsterkte"
+        }
+      },
+      {
+        "id": "129",
+        "label": {
+          "en": "Battery and humidity",
+          "nl": "Batterij en vochtigheidsgraad"
+        }
+      },
+      {
+        "id": "97",
+        "label": {
+          "en": "Battery, temperature and luminosity",
+          "nl": "Batterij, temperatuur, en lichtsterkte"
+        }
+      },
+      {
+        "id": "161",
+        "label": {
+          "en": "Battery, temperature and humidity",
+          "nl": "Batterij, temperatuur en vochtigheidsgraad"
+        }
+      },
+      {
+        "id": "193",
+        "label": {
+          "en": "Battery, luminosity and humidity",
+          "nl": "Batterij, lichtsterkte en vochtigheidsgraad"
+        }
+      },
+      {
+        "id": "225",
+        "label": {
+          "en": "Battery, temperature, luminosity and humidity",
+          "nl": "Batterij, temperatuur, lichtsterkte en vochtigheidsgraad"
+        }
+      }
+    ]
+  },
+  {
+    "id": "103",
+    "type": "dropdown",
+    "label": {
+      "en": "Information reports send to association group 3",
+      "nl": "Informatie updates naar associatie groep 3"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines what information is sent to the devices in association group 3.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt welke informatie er wordt verstuurd naar de apparaten in de 3e associatie groep."
+    },
+    "zwave": {
+      "index": 103,
+      "size": 4
+    },
+    "value": "0",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Nothing",
+          "nl": "Geen"
+        }
+      },
+      {
+        "id": "33",
+        "label": {
+          "en": "Battery and temperature",
+          "nl": "Batterij en temperatuur"
+        }
+      },
+      {
+        "id": "65",
+        "label": {
+          "en": "Battery and luminosity",
+          "nl": "Batterij en lichtsterkte"
+        }
+      },
+      {
+        "id": "129",
+        "label": {
+          "en": "Battery and humidity",
+          "nl": "Batterij en vochtigheidsgraad"
+        }
+      },
+      {
+        "id": "97",
+        "label": {
+          "en": "Battery, temperature and luminosity",
+          "nl": "Batterij, temperatuur, en lichtsterkte"
+        }
+      },
+      {
+        "id": "161",
+        "label": {
+          "en": "Battery, temperature and humidity",
+          "nl": "Batterij, temperatuur en vochtigheidsgraad"
+        }
+      },
+      {
+        "id": "193",
+        "label": {
+          "en": "Battery, luminosity and humidity",
+          "nl": "Batterij, lichtsterkte en vochtigheidsgraad"
+        }
+      },
+      {
+        "id": "225",
+        "label": {
+          "en": "Battery, temperature, luminosity and humidity",
+          "nl": "Batterij, temperatuur, lichtsterkte en vochtigheidsgraad"
+        }
+      }
+    ]
+  },
+  {
+    "id": "111",
+    "type": "number",
+    "label": {
+      "en": "Reporting interval association group 1",
+      "nl": "Informatie update interval associatie groep 1"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the interval between reports to Homey.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de tijd tussen rapportages naar Homey."
+    },
+    "zwave": {
+      "index": 111,
+      "size": 4
+    },
+    "attr": {
+      "min": 1,
+      "max": 2678400
+    },
+    "value": 30
+  },
+  {
+    "id": "112",
+    "type": "number",
+    "label": {
+      "en": "Reporting interval association group 2",
+      "nl": "Informatie update interval associatie groep 2"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the interval between reports to devices in association group 2.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de tijd tussen rapportages naar apparaten in de 2e associatie groep."
+    },
+    "zwave": {
+      "index": 112,
+      "size": 4
+    },
+    "attr": {
+      "min": 1,
+      "max": 2678400
+    },
+    "value": 720
+  },
+  {
+    "id": "113",
+    "type": "number",
+    "label": {
+      "en": "Reporting interval association group 3",
+      "nl": "Informatie update interval associatie groep 3"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the interval between reports to devices in association group 3.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de tijd tussen rapportages naar apparaten in de 3e associatie groep."
+    },
+    "zwave": {
+      "index": 113,
+      "size": 4
+    },
+    "attr": {
+      "min": 1,
+      "max": 2678400
+    },
+    "value": 720
+  }
+]

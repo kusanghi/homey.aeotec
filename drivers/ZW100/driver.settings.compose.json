@@ -1,0 +1,384 @@
+[
+  {
+    "id": "2",
+    "type": "checkbox",
+    "label": {
+      "en": "10 Minutes Wake-Up",
+      "nl": "10 Minuten Wakker"
+    },
+    "hint": {
+      "en": "If this option is enabled, the device will stay awake for 10 minutes when the batteries are replaced",
+      "nl": "Als deze optie is ingeschakeld zal het apparaat voor 10 minuten wakker blijven wanneer de batterijen zijn vervangen"
+    },
+    "zwave": {
+      "index": 2,
+      "size": 1
+    },
+    "value": false
+  },
+  {
+    "id": "3",
+    "type": "number",
+    "label": {
+      "en": "Motion Alarm Cancellation",
+      "nl": "Bewegingsalarm Annulering"
+    },
+    "hint": {
+      "en": "Time before motion alarm is turned off since last motion detected event.\nRange: 10 - 255 = seconds\n256 - 3600 = minutes when devided by 60",
+      "nl": "Tijd voor dat bewegingsdetectie alarm wordt uitgeschakeld na laatste beweging.\nBereik: 10 - 255 = seconden\n256 - 3600 = minuten wanneer gedeeld door 60"
+    },
+    "zwave": {
+      "index": 3,
+      "size": 2
+    },
+    "attr": {
+      "min": 10,
+      "max": 3600
+    },
+    "value": 240
+  },
+  {
+    "id": "4",
+    "type": "dropdown",
+    "label": {
+      "en": "Motion Sensor Sensitivity",
+      "nl": "Gevoeligheid Bewegingssensor"
+    },
+    "hint": {
+      "en": "Determines sensitivity of the motion sensor.",
+      "nl": "Bepaald de gevoeligheid van de bewegingssensor."
+    },
+    "zwave": {
+      "index": 4,
+      "size": 1
+    },
+    "value": "5",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Off",
+          "nl": "Uit"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Level 1 (minimum)",
+          "nl": "Level 1 (minimum)"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "Level 2",
+          "nl": "Level 2"
+        }
+      },
+      {
+        "id": "3",
+        "label": {
+          "en": "Level 3",
+          "nl": "Level 3"
+        }
+      },
+      {
+        "id": "4",
+        "label": {
+          "en": "Level 4",
+          "nl": "Level 4"
+        }
+      },
+      {
+        "id": "5",
+        "label": {
+          "en": "Level 5 (maximum)",
+          "nl": "Level 5 (maximum)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tamper_cancellation",
+    "type": "number",
+    "label": {
+      "en": "Tamper Alarm Cancellation",
+      "nl": "Sabotage Alarm Annulering"
+    },
+    "hint": {
+      "en": "After how many seconds will the tamper alarm be de-activated.\nRange: 0 (don't cancel), 1 - 86400 seconds",
+      "nl": "Na hoeveel seconden moet het tamper alarm worden ge-deactiveerd.\nBereik: 0 (niet annuleren), 1 - 86400 seconden"
+    },
+    "attr": {
+      "min": 0,
+      "max": 86400
+    },
+    "value": 120
+  },
+  {
+    "id": "39",
+    "type": "number",
+    "label": {
+      "en": "Battery Low Threshold",
+      "nl": "Batterij Laag Drempel"
+    },
+    "hint": {
+      "en": "Percentage of battery power below which the device should send a low battery alarm",
+      "nl": "Percentage batterij niveau waaronder het apparaat een lege batterij waarschuwing zou moeten geven"
+    },
+    "zwave": {
+      "index": 39,
+      "size": 1
+    },
+    "attr": {
+      "min": 10,
+      "max": 50
+    },
+    "value": 20
+  },
+  {
+    "id": "40",
+    "type": "checkbox",
+    "label": {
+      "en": "Threshold Dependend Updates",
+      "nl": "Drempel Afhankelijke Updates"
+    },
+    "hint": {
+      "en": "Determine if the new measured value(s) need to exceed the threshold (determined below) before it is send on the interval.",
+      "nl": "Bepaal of de nieuwe gemeten waarde(s) de drempel moeten overschrijden (hieronder bepaald) voor ze worden verzonden op het interval."
+    },
+    "zwave": {
+      "index": 40,
+      "size": 1
+    },
+    "value": true
+  },
+  {
+    "id": "41",
+    "type": "number",
+    "label": {
+      "en": "Temperature Threshold",
+      "nl": "Temperatuur Drempel"
+    },
+    "hint": {
+      "en": "If this temperature threshold (in Celsius) has been exceeded, the device will send the new value on the interval\nRange: 0 (no report), 1 - 10 degree",
+      "nl": "Als deze temperatuur drempel (in Celsius) wordt overschreden, zal het apparaat de nieuwe waarde versturen op het interval\nBereik: 0 (geen update), 1 - 10 graden"
+    },
+    "zwave": {
+      "index": 41,
+      "size": 1
+    },
+    "attr": {
+      "min": 0,
+      "max": 10
+    },
+    "value": 2
+  },
+  {
+    "id": "42",
+    "type": "number",
+    "label": {
+      "en": "Humidity Threshold",
+      "nl": "Luchtvochtigheid Drempel"
+    },
+    "hint": {
+      "en": "If this humidity threshold (in percentage) has been exceeded, the device will send the new value on the interval\nRange: 0 (no report), 1 - 100%",
+      "nl": "Als deze luchtvochtigheid drempel (in percentage) wordt overschreden, zal het apparaat de nieuwe waarde versturen op het interval\nBereik: 0 (geen update), 1 - 100%"
+    },
+    "zwave": {
+      "index": 42,
+      "size": 1
+    },
+    "attr": {
+      "min": 0,
+      "max": 100
+    },
+    "value": 10
+  },
+  {
+    "id": "43",
+    "type": "number",
+    "label": {
+      "en": "Luminance Threshold",
+      "nl": "Omgevingslicht Drempel"
+    },
+    "hint": {
+      "en": "If this luminance threshold (in lux) has been exceeded, the device will send the new value on the interval\nRange: 0 (no report), 1 - 1000 lux",
+      "nl": "Als deze omgevingslicht drempel (in lux) wordt overschreden, zal het apparaat de nieuwe waarde versturen op het interval\nBereik: 0 (geen update), 1 - 1000 lux"
+    },
+    "zwave": {
+      "index": 43,
+      "size": 2
+    },
+    "attr": {
+      "min": 0,
+      "max": 1000
+    },
+    "value": 100
+  },
+  {
+    "id": "44",
+    "type": "number",
+    "label": {
+      "en": "Battery Level Threshold",
+      "nl": "Batterijniveau Drempel"
+    },
+    "hint": {
+      "en": "If this battery level threshold (in percentage) has been exceeded, the device will send the new value on the interval\nRange: 0 (no report), 1 - 100%",
+      "nl": "Als dit batterijniveau drempel (in percentage) wordt overschreden, zal het apparaat de nieuwe waarde versturen op het interval\nBereik: 0 (geen update), 1 - 100%"
+    },
+    "zwave": {
+      "index": 44,
+      "size": 1
+    },
+    "attr": {
+      "min": 0,
+      "max": 100
+    },
+    "value": 10
+  },
+  {
+    "id": "45",
+    "type": "number",
+    "label": {
+      "en": "Ultraviolet Threshold",
+      "nl": "Ultraviolet Drempel"
+    },
+    "hint": {
+      "en": "If this ultraviolet threshold (in percentage) has been exceeded, the device will send the new value on the interval\nRange: 0 (no report), 1 - 100%",
+      "nl": "Als deze ultraviolet drempel (in percentage) wordt overschreden, zal het apparaat de nieuwe waarde versturen op het interval\nBereik: 0 (geen update), 1 - 100%"
+    },
+    "zwave": {
+      "index": 45,
+      "size": 1
+    },
+    "attr": {
+      "min": 0,
+      "max": 100
+    },
+    "value": 2
+  },
+  {
+    "id": "81",
+    "type": "checkbox",
+    "label": {
+      "en": "LED Behaviour On Alarms",
+      "nl": "LED Gedrag Bij Alarmen"
+    },
+    "hint": {
+      "en": "Enable the LED on activating the motion and tamper alarms.\n\nDevice firmware v1.8 and up",
+      "nl": "Activeer de LED bij het activeren van de beweging en sabotage alarmen.\n\nDevice firmware v1.8 en hoger"
+    },
+    "zwave": {
+      "index": 81,
+      "size": 1
+    },
+    "value": true
+  },
+  {
+    "id": "111",
+    "type": "number",
+    "label": {
+      "en": "Update Value(s) Interval",
+      "nl": "Update Waarde(s) Update Interval"
+    },
+    "hint": {
+      "en": "This parameter indicates how often the MultiSensor 6 should send an update of (new) values to devices in association group 1 (including Homey).",
+      "nl": "Deze parameter geeft aan hoe vaak de MultiSensor 6 een update van (nieuwe) waardes naar apparaten in associatie group 1 verstuurd (inclusief Homey)"
+    },
+    "zwave": {
+      "index": 111,
+      "size": 4
+    },
+    "attr": {
+      "min": 5,
+      "max": 2678400
+    },
+    "value": 600
+  },
+  {
+    "id": "201",
+    "type": "number",
+    "label": {
+      "en": "Temperature Calibration",
+      "nl": "Temperatuur Kalibratie"
+    },
+    "hint": {
+      "en": "Determine how much degree Celsius needs to be offset to get the right temperature.\nRange: -12.8 - +12.7 degree\n\nDevice firmware v1.7 and up",
+      "nl": "Bepaal hoeveel graden Celsius de temperatuur gecompenseerd moet worden.\nBereik: -12,8 - +12,7 graden\n\nDevice firmware v1.7 en hoger"
+    },
+    "zwave": {
+      "index": 201,
+      "size": 2
+    },
+    "attr": {
+      "min": -12.8,
+      "max": 12.7,
+      "step": 0.1
+    },
+    "value": 0
+  },
+  {
+    "id": "202",
+    "type": "number",
+    "label": {
+      "en": "Humidity Calibration",
+      "nl": "Luchtvochtigheid Kalibratie"
+    },
+    "hint": {
+      "en": "Determine what percentage needs to be offset to get the right humidity.\nRange: -50% - +50%",
+      "nl": "Bepaal welke percentage er moet worden gecompenseerd om de echte waarde te krijgen.\nBereik: -50% - +50%"
+    },
+    "zwave": {
+      "index": 202,
+      "size": 1
+    },
+    "attr": {
+      "min": -50,
+      "max": 50
+    },
+    "value": 0
+  },
+  {
+    "id": "203",
+    "type": "number",
+    "label": {
+      "en": "Luminance Calibration",
+      "nl": "Omgevingslicht Kalibratie"
+    },
+    "hint": {
+      "en": "Determine how much lux needs to be offset to get the right luminance.\nRange: -1000 - +1000 lux",
+      "nl": "Bepaal hoeveel lux er moet worden gecompenseerd om de goede waarde te krijgen.\nBereik: -1000 - +1000 lux"
+    },
+    "zwave": {
+      "index": 203,
+      "size": 2
+    },
+    "attr": {
+      "min": -1000,
+      "max": 1000
+    },
+    "value": 0
+  },
+  {
+    "id": "204",
+    "type": "number",
+    "label": {
+      "en": "Ultraviolet Calibration",
+      "nl": "Ultraviolet Kalibratie"
+    },
+    "hint": {
+      "en": "Determine what percentage needs to be offset to get the right ultraviolet value.\nRange: -10% - +10%",
+      "nl": "Bepaal hoeveel percentage er gecompenseerd moet worden om de goede ultraviolet waarde te krijgen.\nBereik: -10% - +10%"
+    },
+    "zwave": {
+      "index": 204,
+      "size": 1
+    },
+    "attr": {
+      "min": -10,
+      "max": 10
+    },
+    "value": 0
+  }
+]

@@ -1,0 +1,323 @@
+[
+  {
+    "id": "2",
+    "type": "dropdown",
+    "label": {
+      "en": "Energy detection mode",
+      "nl": "Detectie modus voor stroom"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the energy detection mode for the reports of parameter 103 and 104.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de detectie modus voor de rapportages van parameter 103 en 104."
+    },
+    "zwave": {
+      "index": 2,
+      "size": 1
+    },
+    "value": "0",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Report power, report the absolute value of energy."
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Report positive/negative power, report the algebraic sum of energy."
+        }
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "value": true,
+    "label": {
+      "en": "Enable/disable selective reporting only when power change reaches a certain threshold or percentage"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not to limit reporting power changes to only report when the change is above the threshold.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het apparaat alleen rapporteerd als de verandering groter is dan de ingestelde drempel."
+    },
+    "zwave": {
+      "index": 3,
+      "size": 1
+    },
+    "type": "checkbox"
+  },
+  {
+    "id": "4",
+    "type": "number",
+    "label": {
+      "en": "Wattage threshold for automatic reporting",
+      "nl": "Wattage drempel voor automatische rapportage"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the threshold change in wattage before an automatic report is send to Homey.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de drempel voor wattage veranderingen voordat er automatisch een rapport wordt verzonden naar Homey."
+    },
+    "zwave": {
+      "index": 4,
+      "size": 2,
+      "signed": false
+    },
+    "attr": {
+      "min": 0,
+      "max": 60000
+    },
+    "value": 50
+  },
+  {
+    "id": "5",
+    "type": "number",
+    "label": {
+      "en": "Wattage threshold for automatic reporting, Clamp 1",
+      "nl": "Wattage drempel voor automatische rapportage, Clamp 1"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the threshold change in wattage on Clamp 1 before an automatic report is send to Homey.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de drempel voor wattage veranderingen op Clamp 1 voordat er automatisch een rapport wordt verzonden naar Homey."
+    },
+    "zwave": {
+      "index": 5,
+      "size": 2,
+      "signed": false
+    },
+    "attr": {
+      "min": 0,
+      "max": 60000
+    },
+    "value": 50
+  },
+  {
+    "id": "6",
+    "type": "number",
+    "label": {
+      "en": "Wattage threshold for automatic reporting, Clamp 2",
+      "nl": "Wattage drempel voor automatische rapportage, Clamp 2"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the threshold change in wattage on Clamp 2 before an automatic report is send to Homey.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de drempel voor wattage veranderingen op Clamp 2 voordat er automatisch een rapport wordt verzonden naar Homey."
+    },
+    "zwave": {
+      "index": 6,
+      "size": 2,
+      "signed": false
+    },
+    "attr": {
+      "min": 0,
+      "max": 60000
+    },
+    "value": 50
+  },
+  {
+    "id": "7",
+    "type": "number",
+    "label": {
+      "en": "Wattage threshold for automatic reporting, Clamp 3",
+      "nl": "Wattage drempel voor automatische rapportage, Clamp 3"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the threshold change in wattage on Clamp 3 before an automatic report is send to Homey.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de drempel voor wattage veranderingen op Clamp 3 voordat er automatisch een rapport wordt verzonden naar Homey."
+    },
+    "zwave": {
+      "index": 7,
+      "size": 2,
+      "signed": false
+    },
+    "attr": {
+      "min": 0,
+      "max": 60000
+    },
+    "value": 50
+  },
+  {
+    "id": "8",
+    "type": "number",
+    "label": {
+      "en": "Percentage wattage threshold for automatic reporting",
+      "nl": "Wattage drempel in procenten voor automatische rapportage"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the percentage threshold for wattage changes to trigger an automatic report.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de minimale verandering in procenten van het wattage voorat er een automatisch rapport wordt verzonden."
+    },
+    "zwave": {
+      "index": 8,
+      "size": 1
+    },
+    "attr": {
+      "min": 0,
+      "max": 100
+    },
+    "value": 80
+  },
+  {
+    "id": "9",
+    "type": "number",
+    "label": {
+      "en": "Percentage wattage threshold for automatic reporting, Clamp 1",
+      "nl": "Wattage drempel in procenten voor automatische rapportage, Clamp 1"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the percentage threshold for wattage on Clamp 1 changes to trigger an automatic report.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de minimale verandering in procenten van het wattage op Clamp 1 voordat er een automatisch rapport wordt verzonden."
+    },
+    "zwave": {
+      "index": 9,
+      "size": 1
+    },
+    "attr": {
+      "min": 0,
+      "max": 100
+    },
+    "value": 80
+  },
+  {
+    "id": "10",
+    "type": "number",
+    "label": {
+      "en": "Percentage wattage threshold for automatic reporting, Clamp 2",
+      "nl": "Wattage drempel in procenten voor automatische rapportage, Clamp 2"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the percentage threshold for wattage on Clamp 2 changes to trigger an automatic report.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de minimale verandering in procenten van het wattage op Clamp 2 voordat er een automatisch rapport wordt verzonden."
+    },
+    "zwave": {
+      "index": 10,
+      "size": 1
+    },
+    "attr": {
+      "min": 0,
+      "max": 100
+    },
+    "value": 80
+  },
+  {
+    "id": "11",
+    "type": "number",
+    "label": {
+      "en": "Percentage wattage threshold for automatic reporting, Clamp 3",
+      "nl": "Wattage drempel in procenten voor automatische rapportage, Clamp 3"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the percentage threshold for wattage on Clamp 3 changes to trigger an automatic report.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de minimale verandering in procenten van het wattage op Clamp 3 voordat er een automatisch rapport wordt verzonden."
+    },
+    "zwave": {
+      "index": 11,
+      "size": 1
+    },
+    "attr": {
+      "min": 0,
+      "max": 100
+    },
+    "value": 80
+  },
+  {
+    "id": "101",
+    "type": "number",
+    "label": {
+      "en": "Association group 1 report type",
+      "nl": "Rapport type associatie groep 1"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the type of reports sent to devices in the 1st association group.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt welk type rapporten er worden verstuurd naar apparaten in de 1e associatie groep."
+    },
+    "zwave": {
+      "index": 101,
+      "size": 4
+    },
+    "value": 2
+  },
+  {
+    "id": "102",
+    "type": "number",
+    "label": {
+      "en": "Association group 2 report type",
+      "nl": "Rapport type associatie groep 2"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the type of reports sent to devices in the 2nd association group.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt welk type rapporten er worden verstuurd naar apparaten in de 2e associatie groep."
+    },
+    "zwave": {
+      "index": 102,
+      "size": 4
+    },
+    "value": 12
+  },
+  {
+    "id": "103",
+    "type": "number",
+    "label": {
+      "en": "Association group 3 report type",
+      "nl": "Rapport type associatie groep 3"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the type of reports sent to devices in the 3rd association group.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt welk type rapporten er worden verstuurd naar apparaten in de 3e associatie groep."
+    },
+    "zwave": {
+      "index": 103,
+      "size": 4
+    },
+    "value": 1
+  },
+  {
+    "id": "111",
+    "type": "number",
+    "label": {
+      "en": "Report interval association group 1",
+      "nl": "Rapportage interval associatie groep 1"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the interval for sending report to devices in association group 1.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de interval voor het versturen van rapporten naar apparaten in de 1ste associatie groep."
+    },
+    "zwave": {
+      "index": 111,
+      "size": 4
+    },
+    "value": 300
+  },
+  {
+    "id": "112",
+    "type": "number",
+    "label": {
+      "en": "Report interval association group 2",
+      "nl": "Rapportage interval associatie groep 2"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the interval for sending report to devices in association group 2.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de interval voor het versturen van rapporten naar apparaten in de 2e associatie groep."
+    },
+    "zwave": {
+      "index": 112,
+      "size": 4
+    },
+    "value": 300
+  },
+  {
+    "id": "113",
+    "type": "number",
+    "label": {
+      "en": "Report interval association group 3",
+      "nl": "Rapportage interval associatie groep 3"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the interval for sending report to devices in association group 3.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de interval voor het versturen van rapporten naar apparaten in de 3e associatie groep."
+    },
+    "zwave": {
+      "index": 113,
+      "size": 4
+    },
+    "value": 300
+  }
+]

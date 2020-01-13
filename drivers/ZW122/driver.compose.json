@@ -1,0 +1,46 @@
+{
+  "id": "ZW122",
+  "name": {
+    "en": "Water Sensor 6"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "measure_battery",
+    "alarm_water",
+    "measure_temperature",
+    "alarm_tamper"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": 134,
+    "productTypeId": [
+      2,
+      514
+    ],
+    "productId": [
+      120,
+      122
+    ],
+    "zwaveAllianceProductId": 1579,
+    "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/1579/Door Window Sensor Gen5 manual.pdf",
+    "learnmode": {
+      "instruction": {
+        "en": "Press the action button on the {{driverNameEn}}. For secure pairing press the action button twice.",
+        "nl": "Druk op de actie knop op de {{driverNameNl}}. Voor beveiligd koppelen druk tweemaal op de actie knop."
+      }
+    },
+    "associationGroups": [
+      1
+    ],
+    "defaultConfiguration": [
+      {
+        "id": 64,
+        "size": 1,
+        "value": 0
+      }
+    ]
+  }
+}

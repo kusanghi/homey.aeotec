@@ -1,0 +1,45 @@
+{
+  "id": "DSB05",
+  "name": {
+    "en": "Multisensor 4-in-1"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "measure_battery",
+    "measure_humidity",
+    "measure_luminance",
+    "alarm_motion",
+    "measure_temperature"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.jpg",
+    "small": "{{driverAssetsPath}}/images/small.jpg"
+  },
+  "zwave": {
+    "manufacturerId": 134,
+    "productTypeId": [
+      2
+    ],
+    "productId": [
+      5
+    ],
+    "zwaveAllianceProductId": 763,
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Press the action button on the {{driverNameEn}}",
+        "nl": "Druk op de actie knop van de {{driverNameNl}}"
+      }
+    },
+    "associationGroups": [
+      1
+    ],
+    "defaultConfiguration": [
+      {
+        "id": 101,
+        "size": 4,
+        "value": 225
+      }
+    ]
+  }
+}

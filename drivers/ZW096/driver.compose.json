@@ -1,0 +1,82 @@
+{
+  "id": "ZW096",
+  "name": {
+    "en": "Smart Switch 6"
+  },
+  "class": "socket",
+  "capabilities": [
+    "measure_power",
+    "meter_power",
+    "onoff"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": 134,
+    "productTypeId": [
+      3,
+      515,
+      771
+    ],
+    "productId": [
+      96
+    ],
+    "zwaveAllianceProductId": 2515,
+    "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/2515/Instructions - Aeon Labs Smart Switch 6 (2).pdf",
+    "learnmode": {
+      "instruction": {
+        "en": "Press the (action) button on the Smart Switch to enter learn mode",
+        "nl": "Druk op de (actie) knop op de Smart Switch om de leer modus te activeren"
+      }
+    },
+    "associationGroups": [
+      1
+    ],
+    "associationGroupsOptions": {
+      "1": {
+        "hint": {
+          "en": "Z-Wave Plus Lifeline.\r\nThe Hial CC and Basic Report CC (configured by parameter 80) can be sent to the associatd nodes in this group."
+        }
+      }
+    },
+    "defaultConfiguration": [
+      {
+        "id": 3,
+        "size": 1,
+        "value": 1
+      },
+      {
+        "id": 80,
+        "size": 1,
+        "value": 2
+      },
+      {
+        "id": 90,
+        "size": 1,
+        "value": 1
+      },
+      {
+        "id": 91,
+        "size": 2,
+        "value": 25
+      },
+      {
+        "id": 92,
+        "size": 1,
+        "value": 30
+      },
+      {
+        "id": 101,
+        "size": 4,
+        "value": 12
+      },
+      {
+        "id": 111,
+        "size": 4,
+        "value": 15
+      }
+    ]
+  }
+}

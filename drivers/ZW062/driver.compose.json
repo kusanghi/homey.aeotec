@@ -1,0 +1,55 @@
+{
+  "id": "ZW062",
+  "name": {
+    "en": "Garage Door Controller Gen5"
+  },
+  "class": "lock",
+  "capabilities": [
+    "locked"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.jpg",
+    "small": "{{driverAssetsPath}}/images/small.jpg"
+  },
+  "zwave": {
+    "manufacturerId": 134,
+    "productTypeId": [
+      3,
+      515
+    ],
+    "productId": [
+      62
+    ],
+    "zwaveAllianceProductId": 1497,
+    "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/1497/Aeon Labs Garage Door Controller Gen5 manual.pdf",
+    "learnmode": {
+      "instruction": {
+        "en": "Press the action button on the {{driverNameEn}}",
+        "nl": "Druk op de actie knop op de {{driverNameNl}}"
+      }
+    },
+    "associationGroups": [
+      1,
+      2
+    ],
+    "associationGroupsOptions": {
+      "1": {
+        "hint": {
+          "en": "Group 1 is assigned to the Lifeline association group and every device has 5 nodes to associate.\nWhen the Garage Door controller is received the commands sent by controller to be turned on or off, the Garage Door controller will send a basic report of its status to the nodes in association group 1. To change what kind of signal is sent to the nodes in group 1, please see the detailed description of configuration parameter 80."
+        }
+      }
+    },
+    "defaultConfiguration": [
+      {
+        "id": 32,
+        "value": 0,
+        "size": 1
+      },
+      {
+        "id": 80,
+        "value": 2,
+        "size": 1
+      }
+    ]
+  }
+}

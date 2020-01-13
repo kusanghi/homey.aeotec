@@ -1,0 +1,54 @@
+{
+  "id": "ZW116",
+  "name": {
+    "en": "Nano Switch (ZW116)"
+  },
+  "class": "light",
+  "capabilities": [
+    "measure_power",
+    "meter_power",
+    "onoff"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": 134,
+    "productTypeId": [
+      3,
+      515
+    ],
+    "productId": [
+      116
+    ],
+    "zwaveAllianceProductId": 2289,
+    "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/2289/Nano Switch manual.pdf",
+    "learnmode": {
+      "instruction": {
+        "en": "Press the action button on the back of the {{driverNameEn}}. For secure pairing press the action button twice.",
+        "nl": "Druk op de actie knop op de achterkant van de {{driverNameNl}}. Voor beveiligd koppelen druk tweemaal op de actie knop."
+      }
+    },
+    "associationGroups": [
+      1
+    ],
+    "defaultConfiguration": [
+      {
+        "id": 80,
+        "value": 2,
+        "size": 1
+      },
+      {
+        "id": 90,
+        "size": 1,
+        "value": 1
+      },
+      {
+        "id": 92,
+        "size": 1,
+        "value": 30
+      }
+    ]
+  }
+}

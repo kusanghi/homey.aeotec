@@ -1,0 +1,126 @@
+[
+  {
+    "id": "37",
+    "type": "dropdown",
+    "label": {
+      "en": "Siren sound and volume",
+      "nl": "Geluid en volume van sirene"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the sound and volume of the {{driverNameEn}}.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het geluid en het volume van de {{driverNameNl}}."
+    },
+    "zwave": {
+      "index": 37,
+      "size": 2
+    },
+    "value": "259",
+    "values": [
+      {
+        "id": "257",
+        "label": {
+          "en": "Sound 1 (low volume)",
+          "nl": "Geluid 1 (laag volume)"
+        }
+      },
+      {
+        "id": "258",
+        "label": {
+          "en": "Sound 1 (medium volume)",
+          "nl": "Geluid 1 (middel volume)"
+        }
+      },
+      {
+        "id": "259",
+        "label": {
+          "en": "Sound 1 (high volume)",
+          "nl": "Geluid 1 (hoog volume)"
+        }
+      },
+      {
+        "id": "513",
+        "label": {
+          "en": "Sound 2 (low volume)",
+          "nl": "Geluid 2 (laag volume)"
+        }
+      },
+      {
+        "id": "514",
+        "label": {
+          "en": "Sound 2 (medium volume)",
+          "nl": "Geluid 2 (middel volume)"
+        }
+      },
+      {
+        "id": "515",
+        "label": {
+          "en": "Sound 2 (high volume)",
+          "nl": "Geluid 2 (hoog volume)"
+        }
+      },
+      {
+        "id": "769",
+        "label": {
+          "en": "Sound 3 (low volume)",
+          "nl": "Geluid 3 (laag volume)"
+        }
+      },
+      {
+        "id": "770",
+        "label": {
+          "en": "Sound 3 (medium volume)",
+          "nl": "Geluid 3 (middel volume)"
+        }
+      },
+      {
+        "id": "771",
+        "label": {
+          "en": "Sound 3 (high volume)",
+          "nl": "Geluid 3 (hoog volume)"
+        }
+      },
+      {
+        "id": "1025",
+        "label": {
+          "en": "Sound 4 (low volume)",
+          "nl": "Geluid 4 (laag volume)"
+        }
+      },
+      {
+        "id": "1026",
+        "label": {
+          "en": "Sound 4 (medium volume)",
+          "nl": "Geluid 4 (middel volume)"
+        }
+      },
+      {
+        "id": "1027",
+        "label": {
+          "en": "Sound 4 (high volume)",
+          "nl": "Geluid 4 (hoog volume)"
+        }
+      },
+      {
+        "id": "1281",
+        "label": {
+          "en": "Sound 5 (low volume)",
+          "nl": "Geluid 5 (laag volume)"
+        }
+      },
+      {
+        "id": "1282",
+        "label": {
+          "en": "Sound 5 (medium volume)",
+          "nl": "Geluid 5 (middel volume)"
+        }
+      },
+      {
+        "id": "1283",
+        "label": {
+          "en": "Sound 5 (high volume)",
+          "nl": "Geluid 5 (hoog volume)"
+        }
+      }
+    ]
+  }
+]

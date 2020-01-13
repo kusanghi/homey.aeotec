@@ -1,0 +1,250 @@
+[
+  {
+    "id": "touch_sound",
+    "type": "checkbox",
+    "label": {
+      "en": "Touch sound",
+      "nl": "Aanraak geluid"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not the {{driverNameEn}} makes a sound when touched.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of de {{driverNameNl}} geluid maakt bij het aanraken."
+    },
+    "zwave": {
+      "index": 1,
+      "size": 1
+    },
+    "value": true
+  },
+  {
+    "id": "touch_vibration",
+    "type": "checkbox",
+    "label": {
+      "en": "Touch vibration",
+      "nl": "Aanraak trillen"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not the {{driverNameEn}} vibrates when touched.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of de {{driverNameNl}} trilt bij het aanraken."
+    },
+    "zwave": {
+      "index": 2,
+      "size": 1
+    },
+    "value": true
+  },
+  {
+    "id": "slide_function",
+    "type": "checkbox",
+    "label": {
+      "en": "Slide dimming function",
+      "nl": "Swipe dim functie"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not dimming on slide is enabled.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of dimmen met swipen geactiveerd is."
+    },
+    "zwave": {
+      "index": 3,
+      "size": 1
+    },
+    "value": true
+  },
+  {
+    "id": "low_battery",
+    "type": "number",
+    "label": {
+      "en": "Low battery level",
+      "nl": "Laag batterij niveau"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the percentage of battery value to at which the low battery alarm will go off.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt hoe laag het batterijpercentage moet zijn om het alarm af te laten gaan."
+    },
+    "zwave": {
+      "index": 39,
+      "size": 1
+    },
+    "value": 20,
+    "attr": {
+      "min": 10,
+      "max": 50
+    }
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "LED color when sending data",
+      "nl": "LED kleur bij verzenden data"
+    },
+    "children": [
+      {
+        "id": "rgb_name",
+        "type": "dropdown",
+        "label": {
+          "en": "Color name",
+          "nl": "Kleur naam"
+        },
+        "hint": {
+          "en": "This parameter ({{zwaveParameterIndex}}) determines the colour of the LED when sending data. * = Unfortunately the LED can't be turned off completely, this is the most faint color.",
+          "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de kleur van de LED wanneer er data verstuurd wordt. * = Helaas kan de LED niet volledig uitgezet worden, dit is de minst felle kleur."
+        },
+        "value": "0,0,255",
+        "values": [
+          {
+            "id": "1,1,1",
+            "label": {
+              "en": "Off *",
+              "nl": "Uit *"
+            }
+          },
+          {
+            "id": "255,0,0",
+            "label": {
+              "en": "Red",
+              "nl": "Rood"
+            }
+          },
+          {
+            "id": "255,127,0",
+            "label": {
+              "en": "Orange",
+              "nl": "Oranje"
+            }
+          },
+          {
+            "id": "255,255,0",
+            "label": {
+              "en": "Yellow",
+              "nl": "Geel"
+            }
+          },
+          {
+            "id": "0,255,0",
+            "label": {
+              "en": "Green",
+              "nl": "Groen"
+            }
+          },
+          {
+            "id": "0,255,255",
+            "label": {
+              "en": "Turquise",
+              "nl": "Turkoois"
+            }
+          },
+          {
+            "id": "0,127,255",
+            "label": {
+              "en": "Cyan",
+              "nl": "Cyaan"
+            }
+          },
+          {
+            "id": "0,0,255",
+            "label": {
+              "en": "Blue",
+              "nl": "Blauw"
+            }
+          },
+          {
+            "id": "255,0,255",
+            "label": {
+              "en": "Pink",
+              "nl": "Roze"
+            }
+          },
+          {
+            "id": "64,0,255",
+            "label": {
+              "en": "Purple",
+              "nl": "Paars"
+            }
+          },
+          {
+            "id": "255,255,255",
+            "label": {
+              "en": "White",
+              "nl": "Wit"
+            }
+          },
+          {
+            "id": "custom",
+            "label": {
+              "en": "Custom",
+              "nl": "Aangepast"
+            }
+          }
+        ]
+      },
+      {
+        "id": "rgb_name_level",
+        "type": "number",
+        "label": {
+          "en": "Brightness namecolor",
+          "nl": "Helderheid naamkleur"
+        },
+        "hint": {
+          "en": "This parameter ({{zwaveParameterIndex}}) determines the brightness level of the color.",
+          "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de helderheid niveau van de kleur."
+        },
+        "value": 100,
+        "attr": {
+          "min": 0,
+          "max": 100
+        }
+      },
+      {
+        "id": "rgb_r",
+        "type": "number",
+        "label": {
+          "en": "Red",
+          "nl": "Rood"
+        },
+        "hint": {
+          "en": "This parameter ({{zwaveParameterIndex}}) determines the red channel brightness.",
+          "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de helderheid voor het rode kleur kanaal."
+        },
+        "value": 0,
+        "attr": {
+          "min": 0,
+          "max": 255
+        }
+      },
+      {
+        "id": "rgb_g",
+        "type": "number",
+        "label": {
+          "en": "Green",
+          "nl": "Groen"
+        },
+        "hint": {
+          "en": "This parameter ({{zwaveParameterIndex}}) determines the green channel brightness.",
+          "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de helderheid voor het groene kleur kanaal."
+        },
+        "value": 0,
+        "attr": {
+          "min": 0,
+          "max": 255
+        }
+      },
+      {
+        "id": "rgb_b",
+        "type": "number",
+        "label": {
+          "en": "Blue",
+          "nl": "Blauw"
+        },
+        "hint": {
+          "en": "This parameter ({{zwaveParameterIndex}}) determines the blue channel brightness.",
+          "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de helderheid voor het blauwe kleur kanaal."
+        },
+        "value": 255,
+        "attr": {
+          "min": 0,
+          "max": 255
+        }
+      }
+    ]
+  }
+]

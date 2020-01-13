@@ -1,0 +1,37 @@
+{
+  "id": "ZW120",
+  "name": {
+    "en": "Door/Window Sensor Gen5"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "measure_battery",
+    "alarm_tamper",
+    "alarm_contact"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": 134,
+    "productTypeId": [
+      2
+    ],
+    "productId": [
+      120
+    ],
+    "zwaveAllianceProductId": 1579,
+    "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/1579/Door Window Sensor Gen5 manual.pdf",
+    "learnmode": {
+	  "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Press the action button on the {{driverNameEn}}.",
+        "nl": "Druk op de actie knop op de {{driverNameNl}}."
+      }
+    },
+    "associationGroups": [
+      1
+    ]
+  }
+}

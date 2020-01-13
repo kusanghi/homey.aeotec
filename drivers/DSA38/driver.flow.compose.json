@@ -1,0 +1,22 @@
+{
+  "triggers": [
+    {
+      "id": "dsa38_press_1",
+      "title": {
+        "en": "The button has been short pressed",
+        "nl": "De knop is kort ingedrukt"
+      },
+      "args": []
+    },
+    {
+      "id": "dsa38_hold_1",
+      "title": {
+        "en": "The button has been long pressed",
+        "nl": "De knop is lang ingedrukt"
+      },
+      "args": []
+    }
+  ],
+  "conditions": [],
+  "actions": []
+}

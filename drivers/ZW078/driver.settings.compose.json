@@ -1,0 +1,176 @@
+[
+  {
+    "id": "111",
+    "type": "number",
+    "label": {
+      "en": "Time between reports",
+      "nl": "Tijd tussen rapportages"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the time interval between sending reports.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het tijdsinterval tussen het versturen van rapporten."
+    },
+    "zwave": {
+      "index": 111,
+      "size": 4
+    },
+    "attr": {
+      "min": 0,
+      "max": 268435456
+    },
+    "value": 300
+  },
+  {
+    "id": "20",
+    "value": "0",
+    "label": {
+      "en": "Status after re-power",
+      "nl": "Status na herstel stroomvoorziening"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines what the status of the device is after re-power on.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de status van het apparaat na herstel van de stroomvoorziening."
+    },
+    "zwave": {
+      "index": 20,
+      "size": 1
+    },
+    "values": [
+      {
+        "id": "2",
+        "label": {
+          "en": "The state will be off.",
+          "nl": "De status is uit."
+        }
+      },
+      {
+        "id": "0",
+        "label": {
+          "en": "The last state will be restored.",
+          "nl": "De laatst bekende status wordt hersteld."
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "The state will be on.",
+          "nl": "De status is aan."
+        }
+      }
+    ],
+    "type": "dropdown"
+  },
+  {
+    "id": "3",
+    "value": false,
+    "label": {
+      "en": "Current Overload Protection",
+      "nl": "Overbelastingsbeveiliging"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not current overload protection is enabled.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of de overbelastingsbeveiliging ingeschakelt is."
+    },
+    "zwave": {
+      "index": 3,
+      "size": 1
+    },
+    "type": "checkbox"
+  },
+  {
+    "id": "80",
+    "value": "0",
+    "label": {
+      "en": "Enable notifications to associated devices",
+      "nl": "Schakel notificaties naar geassocieerde apparaten in"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not to send notifications to associatied devices when the {{driverNameEn}}'s has changed.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of er notificaties worden verstuurd naar geassocieerde apparaten wanneer de belasting van de {{driverNameNl}} is veranderd."
+    },
+    "zwave": {
+      "index": 80,
+      "size": 1
+    },
+    "values": [
+      {
+        "id": "2",
+        "label": {
+          "en": "Send BASIC report command"
+        }
+      },
+      {
+        "id": "0",
+        "label": {
+          "en": "Send nothing (disabled)"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Send HAIL command"
+        }
+      }
+    ],
+    "type": "dropdown"
+  },
+  {
+    "id": "90",
+    "value": true,
+    "label": {
+      "en": "Enable automatic reports",
+      "nl": "Schakel automatische rapportage in"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not automatic reports are enabled.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of automatische rapportage is ingeschakeld."
+    },
+    "zwave": {
+      "index": 90,
+      "size": 1
+    },
+    "type": "checkbox"
+  },
+  {
+    "id": "91",
+    "value": 50,
+    "label": {
+      "en": "Wattage report change threshold",
+      "nl": "Wattage rapportage drempel"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the minimum value change in wattage before an automatic report is send to Homey.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de minimum verandering in wattage voordat er een automatisch rapport naar Homey wordt verzonden."
+    },
+    "zwave": {
+      "index": 91,
+      "size": 2
+    },
+    "attr": {
+      "min": 0,
+      "max": 32767
+    },
+    "type": "number"
+  },
+  {
+    "id": "92",
+    "value": 10,
+    "label": {
+      "en": "kWh report change threshold",
+      "nl": "kWh rapportage drempel"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the minimum value change in kWh before an automatic report is send to Homey.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de minimum verandering in kWh voordat er een automatisch rapport naar Homey wordt verzonden."
+    },
+    "zwave": {
+      "index": 92,
+      "size": 1
+    },
+    "attr": {
+      "min": 0,
+      "max": 100
+    },
+    "type": "number"
+  }
+]
