@@ -1,96 +1,37 @@
 # Aeotec
 
-This app adds support for Aeotec devices in Homey.
+This app support for Aeotec devices below :
+> 1. `Panic Button` - **DSA38**
+> 2. ` Multisensor 4-in-1` - **DSB05**
+> 3. `Water Sensor` - **DSB45**
+> 4. `Repeater` - **DSD37**
+> 5. `Garage Door Controller Gen5` - **ZW062**
+> 6. `Multisensor 4-in-1 Gen5` - **ZW074**
+> 7. `Smart Switch` - **ZW075**
+> 8. `Heavy Duty Smart Switch` - **ZW078**
+> 9. `Siren Gen5` - **ZW080**
+> 10. `Key Fob` - **ZW088**
+> 11. `Recessed Door Sensor` - **ZW089**
+> 12. `Home Energy Meter Gen5 - 3 phase` - **ZW095-3C**
+> 13. `Smart Switch 6` - **ZW096**
+> 14. `LED Bulb` - **ZW098**
+> 15. `Smart Dimmer 6` - **ZW099**
+> 16. `Multisensor 6` - **ZW100**
+> 17. `Nano Dimmer` - **ZW111-C**
+> 18. `Door/Window Sensor 6` - **ZW112**
+> 19. `Nano Switch` - **ZW116**
+> 20. `Range Extender 6` - **ZW117**
+> 21. ` Door/Window Sensor Gen5` - **ZW120**
+> 22. `LED Strip` - **ZW121**
+> 23. `Water Sensor 6` - **ZW122**
+> 24. `Wallmote Duo` - **ZW129**
+> 25. `Wallmote Quad` - **ZW130**
+> 26. `Dual Nano Switch` - **ZW132**
+> 27. `Nano Switch` - **ZW139-C**
+> 28. `Nano Shutter` - **ZW141**
+> 29. `TriSensor` - **ZWA005**
 
-### Changelog:
-
-**2.0.17**
-* Dual switches should now update their state in Homey when triggered by hand
-
-**2.0.16**
-* Fixed Flows for the Wallmote Quad
-* Fixed on/off status for the Heavy Duty Switch
-
-**2.0.15**
-* Fixed an issue with App store compatibility
-
-**2.0.1 - 2.0.14**
-* Bug fixes
-
-**2.0.0**
-* WARNING: Preview release, this might be unstable
-* App now fully implemented in SDK2
-* Added the following devices:
-  - Water sensor 6
-  - Heavy duty smart switch 5
-  - Wallmote duo
-  - LED strip
-
-**1.6.5**
-* Fixed support for DSB45
-
-**1.6.4**
-* Add AUS product ids
-* Possible fix for ZW111 dim from Flow
-
-**1.6.3**
-* Fix product image of ZW095 - Home Energy Clamp
-
-**1.6.2**
-* Added productIds for ZW130 - Wallmote Quad and ZW088 - KeyFob
-* Added support for ZW116 - Nano Switch
-* Add support for ZW095 - Home Energy Clamp
-
-**1.6.1**
-* Fixed support for ZW139
-* Added support for ZW116 as a separate device
-
-**1.6.0**
-* add support for DSA32 - Panic Button
-* add support for ZW111 - Nano Dimmer
-* add support for ZW139 - Nano Switch
-
-**1.5.2**
-* ZW100 - MultiSensor 6 update:
-  - Added Tamper Capability (re-pair needed)
-  - Added setting 81 - LED behavior on Alarms (working on Device Firmware v1.8 and higher only)
-  - Cleaned up device settings labels
-* Update Z-Wave driver to v1.1.8
-
-**1.5.1**
-* fix minor bugs for ZW075 - Smart Switch and ZW089 - Recessed Door Sensor
-
-**1.5.0**
-* add sound selection Flow card for ZW080 - Siren Gen5
-
-**1.4.1**
-* fix ZW130 - Wallmote Quad, multiple devices were not checked properly with triggers
-
-**1.4.0**
-* add support for ZW130 - Wallmote Quad
-
-**1.3.0**
-* add support for ZW112 - Door/Window Sensor 6
-* add support for ZW117 - Range Extender 6
-* add Power Meter report (%) parameters
-  - ZW075
-  - ZW096
-  - ZW099
-
-**1.2.0**
-* Coding Clean-up
-* More Default Configuration fixes
-* Calibrations ZW100 now user friendly
-* add Power Meter capability: (Re-Pair needed)
-  - ZW075
-  - ZW096
-  - ZW099
-
-**1.1.1**
-* Fix default configuration (all drivers)
-* Add Keyfob mobile card (for battery)
-
-**1.1.0**
-Add Support:
-* ZW088 - Keyfob
-* ZW098 - LED Bulb (RGBW Functionality)
+# Release Notes:
+## 3.0
+* Update Node Modules : Homey meshdriver 1.3.21.
+* Add Energy for Home Energy Meter Gen5 - 3 phase ( In this release, I added the polling function, please wait 30 seconds to 1 minute, for update status.)
