@@ -1,0 +1,5 @@
+{
+  "3.0.2": {
+    "en": "Fix report 3 phase when re-power Homey."
+  }
+}
