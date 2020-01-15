@@ -8036,8 +8036,8 @@
         "batteries": [ "CR123A" ]
       },
       "images": {
-        "large": "/drivers/ZWA005/assets/images/large.jpg",
-        "small": "/drivers/ZWA005/assets/images/small.jpg"
+        "large": "/drivers/ZWA005/assets/images/large.png",
+        "small": "/drivers/ZWA005/assets/images/small.png"
       },
       "zwave": {
         "manufacturerId": 881,
