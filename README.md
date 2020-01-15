@@ -32,6 +32,9 @@ This app support for Aeotec devices below :
 > 29. `TriSensor` - **ZWA005**
 
 # Release Notes:
+## 3.0.2
+* Fix report 3 phase when re-power Homey.
+* Add Driver Batteries
 ## 3.0.1
 * Update Node Modules : Homey meshdriver 1.3.21.
 * Add Energy for Home Energy Meter Gen5 - 3 phase ( In this release, I added the polling function, please wait 30 seconds to 1 minute, for update status.)
