@@ -3,7 +3,7 @@
   "name": {
     "en": "Aeotec"
   },
-  "version": "3.0.1",
+  "version": "3.0.2",
   "compatibility": ">=3.0.0",
   "sdk": 2,
   "brandColor": "#00A2DA",
@@ -680,6 +680,9 @@
       "capabilities": [
         "measure_battery"
       ],
+      "energy": {
+        "batteries": [ "CR2450" ]
+      },
       "images": {
         "large": "/drivers/DSA38/assets/images/large.png",
         "small": "/drivers/DSA38/assets/images/small.png"
@@ -724,6 +727,9 @@
         "alarm_motion",
         "measure_temperature"
       ],
+      "energy": {
+        "batteries": [ "AAA" ]
+      },
       "images": {
         "large": "/drivers/DSB05/assets/images/large.jpg",
         "small": "/drivers/DSB05/assets/images/small.jpg"
@@ -1036,6 +1042,9 @@
         "measure_battery",
         "alarm_water"
       ],
+      "energy": {
+        "batteries": [ "AAA" ]
+      },
       "images": {
         "large": "/drivers/DSB45/assets/images/large.png",
         "small": "/drivers/DSB45/assets/images/small.png"
@@ -1605,6 +1614,9 @@
         "alarm_motion",
         "measure_temperature"
       ],
+      "energy": {
+        "batteries": [ "AAA" ]
+      },
       "images": {
         "large": "/drivers/ZW074/assets/images/large.jpg",
         "small": "/drivers/ZW074/assets/images/small.jpg"
@@ -2880,6 +2892,9 @@
       "capabilities": [
         "measure_battery"
       ],
+      "energy": {
+        "batteries": [ "CR2450" ]
+      },
       "images": {
         "large": "/drivers/ZW088/assets/images/large.png",
         "small": "/drivers/ZW088/assets/images/small.png"
@@ -2959,6 +2974,9 @@
         "measure_battery",
         "alarm_contact"
       ],
+      "energy": {
+        "batteries": [ "CR2" ]
+      },
       "images": {
         "large": "/drivers/ZW089/assets/images/large.png",
         "small": "/drivers/ZW089/assets/images/small.png"
@@ -4521,6 +4539,9 @@
         "measure_humidity",
         "measure_ultraviolet"
       ],
+      "energy": {
+        "batteries": [ "CR123A" ]
+      },
       "images": {
         "large": "/drivers/ZW100/assets/images/large.png",
         "small": "/drivers/ZW100/assets/images/small.png"
@@ -5271,6 +5292,9 @@
         "measure_battery",
         "alarm_contact"
       ],
+      "energy": {
+        "batteries": [ "OTHER" ]
+      },
       "images": {
         "large": "/drivers/ZW112/assets/images/large.png",
         "small": "/drivers/ZW112/assets/images/small.png"
@@ -5714,6 +5738,9 @@
         "alarm_tamper",
         "alarm_contact"
       ],
+      "energy": {
+        "batteries": [ "AA" ]
+      },
       "images": {
         "large": "/drivers/ZW120/assets/images/large.png",
 		"small": "/drivers/ZW120/assets/images/small.png"
@@ -6224,6 +6251,9 @@
         "measure_temperature",
         "alarm_tamper"
       ],
+      "energy": {
+        "batteries": [ "CR123A" ]
+      },
       "images": {
         "large": "/drivers/ZW122/assets/images/large.png",
         "small": "/drivers/ZW122/assets/images/small.png"
@@ -6569,6 +6599,9 @@
         "measure_battery",
         "alarm_battery"
       ],
+      "energy": {
+        "batteries": [ "OTHER" ]
+      },
       "images": {
         "large": "/drivers/ZW129/assets/images/large.png",
         "small": "/drivers/ZW129/assets/images/small.png"
@@ -6903,6 +6936,9 @@
         "measure_battery",
         "alarm_battery"
       ],
+      "energy": {
+        "batteries": [ "OTHER" ]
+      },
       "images": {
         "large": "/drivers/ZW130/assets/images/large.png",
         "small": "/drivers/ZW130/assets/images/small.png"
@@ -7992,10 +8028,13 @@
       "class": "sensor",
       "capabilities": [
         "measure_battery",
-		"alarm_motion",
+		    "alarm_motion",
         "measure_luminance",
         "measure_temperature"
       ],
+      "energy": {
+        "batteries": [ "CR123A" ]
+      },
       "images": {
         "large": "/drivers/ZWA005/assets/images/large.jpg",
         "small": "/drivers/ZWA005/assets/images/small.jpg"
@@ -8580,6 +8619,9 @@
         "alarm_tamper",
         "alarm_contact"
       ],
+      "energy": {
+        "batteries": [ "AA" ]
+      },
       "images": {
         "large": "/drivers/ZWA008/assets/images/large.png",
 		"small": "/drivers/ZWA008/assets/images/small.png"
