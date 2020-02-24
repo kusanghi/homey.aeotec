@@ -33,6 +33,8 @@ This app support for Aeotec devices below :
 
 # Release Notes:
 ## 3.0.2
+* Added support for ZW078-B - Heavy Duty Smart Switch Gen5 ( AU )
+## 3.0.2
 * Fix report 3 phase when re-power Homey.
 * Add Driver Batteries
 ## 3.0.1
