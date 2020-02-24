@@ -32,7 +32,7 @@ This app support for Aeotec devices below :
 > 29. `TriSensor` - **ZWA005**
 
 # Release Notes:
-## 3.0.2
+## 3.0.3
 * Added support for ZW078-B - Heavy Duty Smart Switch Gen5 ( AU )
 ## 3.0.2
 * Fix report 3 phase when re-power Homey.
