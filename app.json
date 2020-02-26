@@ -3489,9 +3489,9 @@
       ]
     },
     {
-      "id": "ZW095-C",
+      "id": "ZW095-3C",
       "name": {
-        "en": "HEM Gen5 - 1 phase"
+        "en": "HEM Gen5 - 3 phase"
       },
       "class": "sensor",
       "capabilities": [
@@ -3504,8 +3504,8 @@
         "cumulative": true
       },
       "images": {
-        "large": "/drivers/ZW095-C/assets/images/large.png",
-        "small": "/drivers/ZW095-C/assets/images/small.png"
+        "large": "/drivers/ZW095-3C/assets/images/large.png",
+        "small": "/drivers/ZW095-3C/assets/images/small.png"
       },
       "zwave": {
         "manufacturerId": 134,
