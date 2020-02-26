@@ -3,7 +3,7 @@
   "name": {
     "en": "Aeotec"
   },
-  "version": "3.0.2",
+  "version": "3.0.3",
   "compatibility": ">=3.0.0",
   "sdk": 2,
   "brandColor": "#00A2DA",
@@ -3077,7 +3077,7 @@
     {
       "id": "ZW095-3C",
       "name": {
-        "en": "Home Energy Meter Gen5 - 3 phase"
+        "en": "HEM - 3 phase"
       },
       "class": "sensor",
       "capabilities": [
@@ -3491,7 +3491,7 @@
     {
       "id": "ZW095-3C",
       "name": {
-        "en": "HEM Gen5 - 3 phase"
+        "en": "Home Energy Meter Gen5 - 3 phase"
       },
       "class": "sensor",
       "capabilities": [
@@ -3503,6 +3503,29 @@
       "energy": {
         "cumulative": true
       },
+      "mobile": {
+        "components": [
+          {
+            "id": "icon",
+            "capabilities": [ ]
+          },
+          {
+            "id": "sensor",
+            "capabilities": [
+              "measure_power",
+              "meter_power",
+              "measure_voltage",
+              "measure_current"
+            ],
+            "options": {
+              "icons": {
+                "meter_power": "/drivers/ZW095-3C/assets/images/meter.svg",
+                "measure_voltage": "/drivers/ZW095-3C/assets/images/voltage.svg.svg"
+              }
+            }
+          }
+        ]
+      },      
       "images": {
         "large": "/drivers/ZW095-3C/assets/images/large.png",
         "small": "/drivers/ZW095-3C/assets/images/small.png"
@@ -3515,6 +3538,7 @@
         "productId": [
           95
         ],
+        "includeSecure": true,
         "learnmode": {
           "instruction": {
             "en": "Press the action button on the Home Energy Meter Gen5"
@@ -3524,7 +3548,7 @@
         "associationGroups": [
           1
         ],
-        "multiChannelNodes": {
+		"multiChannelNodes": {
           "1": {
             "class": "sensor",
             "capabilities": [
@@ -3541,8 +3565,42 @@
             },
             "icon": "/drivers/ZW095-3C/assets/icon.svg",
             "settings": []
+          },
+		  "2": {
+            "class": "sensor",
+            "capabilities": [
+              "measure_power",
+              "meter_power",
+              "measure_voltage",
+              "measure_current"
+            ],
+            "energy": {
+              "cumulative": false
+            },
+            "name": {
+              "en": "Clamp 02"
+            },
+            "icon": "/drivers/ZW095-3C/assets/icon.svg",
+            "settings": []
+          },
+		  "3": {
+            "class": "sensor",
+            "capabilities": [
+              "measure_power",
+              "meter_power",
+              "measure_voltage",
+              "measure_current"
+            ],
+            "energy": {
+              "cumulative": false
+            },
+            "name": {
+              "en": "Clamp 03"
+            },
+            "icon": "/drivers/ZW095-3C/assets/icon.svg",
+            "settings": []
           }
-        }        
+        }
       },
       "settings": [
         {
@@ -3553,8 +3611,8 @@
             "nl": "Detectie modus voor stroom"
           },
           "hint": {
-            "en": "This parameter (2) determines the energy detection mode for the reports of parameter 103 and 104.",
-            "nl": "Deze parameter (2) bepaalt de detectie modus voor de rapportages van parameter 103 en 104."
+            "en": "This parameter ({{zwaveParameterIndex}}) determines the energy detection mode for the reports of parameter 103 and 104.",
+            "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de detectie modus voor de rapportages van parameter 103 en 104."
           },
           "zwave": {
             "index": 2,
@@ -3583,8 +3641,8 @@
             "en": "Enable/disable selective reporting only when power change reaches a certain threshold or percentage"
           },
           "hint": {
-            "en": "This parameter (3) determines whether or not to limit reporting power changes to only report when the change is above the threshold.",
-            "nl": "Deze parameter (3) bepaalt of het apparaat alleen rapporteerd als de verandering groter is dan de ingestelde drempel."
+            "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not to limit reporting power changes to only report when the change is above the threshold.",
+            "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het apparaat alleen rapporteerd als de verandering groter is dan de ingestelde drempel."
           },
           "zwave": {
             "index": 3,
@@ -3600,8 +3658,8 @@
             "nl": "Wattage drempel voor automatische rapportage"
           },
           "hint": {
-            "en": "This parameter (4) determines the threshold change in wattage before an automatic report is send to Homey.",
-            "nl": "Deze parameter (4) bepaalt de drempel voor wattage veranderingen voordat er automatisch een rapport wordt verzonden naar Homey."
+            "en": "This parameter ({{zwaveParameterIndex}}) determines the threshold change in wattage before an automatic report is send to Homey.",
+            "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de drempel voor wattage veranderingen voordat er automatisch een rapport wordt verzonden naar Homey."
           },
           "zwave": {
             "index": 4,
@@ -3622,8 +3680,8 @@
             "nl": "Wattage drempel voor automatische rapportage, Clamp 1"
           },
           "hint": {
-            "en": "This parameter (5) determines the threshold change in wattage on Clamp 1 before an automatic report is send to Homey.",
-            "nl": "Deze parameter (5) bepaalt de drempel voor wattage veranderingen op Clamp 1 voordat er automatisch een rapport wordt verzonden naar Homey."
+            "en": "This parameter ({{zwaveParameterIndex}}) determines the threshold change in wattage on Clamp 1 before an automatic report is send to Homey.",
+            "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de drempel voor wattage veranderingen op Clamp 1 voordat er automatisch een rapport wordt verzonden naar Homey."
           },
           "zwave": {
             "index": 5,
@@ -3644,8 +3702,8 @@
             "nl": "Wattage drempel voor automatische rapportage, Clamp 2"
           },
           "hint": {
-            "en": "This parameter (6) determines the threshold change in wattage on Clamp 2 before an automatic report is send to Homey.",
-            "nl": "Deze parameter (6) bepaalt de drempel voor wattage veranderingen op Clamp 2 voordat er automatisch een rapport wordt verzonden naar Homey."
+            "en": "This parameter ({{zwaveParameterIndex}}) determines the threshold change in wattage on Clamp 2 before an automatic report is send to Homey.",
+            "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de drempel voor wattage veranderingen op Clamp 2 voordat er automatisch een rapport wordt verzonden naar Homey."
           },
           "zwave": {
             "index": 6,
@@ -3666,8 +3724,8 @@
             "nl": "Wattage drempel voor automatische rapportage, Clamp 3"
           },
           "hint": {
-            "en": "This parameter (7) determines the threshold change in wattage on Clamp 3 before an automatic report is send to Homey.",
-            "nl": "Deze parameter (7) bepaalt de drempel voor wattage veranderingen op Clamp 3 voordat er automatisch een rapport wordt verzonden naar Homey."
+            "en": "This parameter ({{zwaveParameterIndex}}) determines the threshold change in wattage on Clamp 3 before an automatic report is send to Homey.",
+            "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de drempel voor wattage veranderingen op Clamp 3 voordat er automatisch een rapport wordt verzonden naar Homey."
           },
           "zwave": {
             "index": 7,
@@ -3688,8 +3746,8 @@
             "nl": "Wattage drempel in procenten voor automatische rapportage"
           },
           "hint": {
-            "en": "This parameter (8) determines the percentage threshold for wattage changes to trigger an automatic report.",
-            "nl": "Deze parameter (8) bepaalt de minimale verandering in procenten van het wattage voorat er een automatisch rapport wordt verzonden."
+            "en": "This parameter ({{zwaveParameterIndex}}) determines the percentage threshold for wattage changes to trigger an automatic report.",
+            "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de minimale verandering in procenten van het wattage voorat er een automatisch rapport wordt verzonden."
           },
           "zwave": {
             "index": 8,
@@ -3709,8 +3767,8 @@
             "nl": "Wattage drempel in procenten voor automatische rapportage, Clamp 1"
           },
           "hint": {
-            "en": "This parameter (9) determines the percentage threshold for wattage on Clamp 1 changes to trigger an automatic report.",
-            "nl": "Deze parameter (9) bepaalt de minimale verandering in procenten van het wattage op Clamp 1 voordat er een automatisch rapport wordt verzonden."
+            "en": "This parameter ({{zwaveParameterIndex}}) determines the percentage threshold for wattage on Clamp 1 changes to trigger an automatic report.",
+            "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de minimale verandering in procenten van het wattage op Clamp 1 voordat er een automatisch rapport wordt verzonden."
           },
           "zwave": {
             "index": 9,
@@ -3730,8 +3788,8 @@
             "nl": "Wattage drempel in procenten voor automatische rapportage, Clamp 2"
           },
           "hint": {
-            "en": "This parameter (10) determines the percentage threshold for wattage on Clamp 2 changes to trigger an automatic report.",
-            "nl": "Deze parameter (10) bepaalt de minimale verandering in procenten van het wattage op Clamp 2 voordat er een automatisch rapport wordt verzonden."
+            "en": "This parameter ({{zwaveParameterIndex}}) determines the percentage threshold for wattage on Clamp 2 changes to trigger an automatic report.",
+            "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de minimale verandering in procenten van het wattage op Clamp 2 voordat er een automatisch rapport wordt verzonden."
           },
           "zwave": {
             "index": 10,
@@ -3751,8 +3809,8 @@
             "nl": "Wattage drempel in procenten voor automatische rapportage, Clamp 3"
           },
           "hint": {
-            "en": "This parameter (11) determines the percentage threshold for wattage on Clamp 3 changes to trigger an automatic report.",
-            "nl": "Deze parameter (11) bepaalt de minimale verandering in procenten van het wattage op Clamp 3 voordat er een automatisch rapport wordt verzonden."
+            "en": "This parameter ({{zwaveParameterIndex}}) determines the percentage threshold for wattage on Clamp 3 changes to trigger an automatic report.",
+            "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de minimale verandering in procenten van het wattage op Clamp 3 voordat er een automatisch rapport wordt verzonden."
           },
           "zwave": {
             "index": 11,
@@ -3772,8 +3830,8 @@
             "nl": "Rapport type associatie groep 1"
           },
           "hint": {
-            "en": "This parameter (101) determines the type of reports sent to devices in the 1st association group.",
-            "nl": "Deze parameter (101) bepaalt welk type rapporten er worden verstuurd naar apparaten in de 1e associatie groep."
+            "en": "This parameter ({{zwaveParameterIndex}}) determines the type of reports sent to devices in the 1st association group.",
+            "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt welk type rapporten er worden verstuurd naar apparaten in de 1e associatie groep."
           },
           "zwave": {
             "index": 101,
@@ -3789,8 +3847,8 @@
             "nl": "Rapport type associatie groep 2"
           },
           "hint": {
-            "en": "This parameter (102) determines the type of reports sent to devices in the 2nd association group.",
-            "nl": "Deze parameter (102) bepaalt welk type rapporten er worden verstuurd naar apparaten in de 2e associatie groep."
+            "en": "This parameter ({{zwaveParameterIndex}}) determines the type of reports sent to devices in the 2nd association group.",
+            "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt welk type rapporten er worden verstuurd naar apparaten in de 2e associatie groep."
           },
           "zwave": {
             "index": 102,
@@ -3806,8 +3864,8 @@
             "nl": "Rapport type associatie groep 3"
           },
           "hint": {
-            "en": "This parameter (103) determines the type of reports sent to devices in the 3rd association group.",
-            "nl": "Deze parameter (103) bepaalt welk type rapporten er worden verstuurd naar apparaten in de 3e associatie groep."
+            "en": "This parameter ({{zwaveParameterIndex}}) determines the type of reports sent to devices in the 3rd association group.",
+            "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt welk type rapporten er worden verstuurd naar apparaten in de 3e associatie groep."
           },
           "zwave": {
             "index": 103,
@@ -3823,14 +3881,14 @@
             "nl": "Rapportage interval associatie groep 1"
           },
           "hint": {
-            "en": "This parameter (111) determines the interval for sending report to devices in association group 1.",
-            "nl": "Deze parameter (111) bepaalt de interval voor het versturen van rapporten naar apparaten in de 1ste associatie groep."
+            "en": "This parameter ({{zwaveParameterIndex}}) determines the interval for sending report to devices in association group 1.",
+            "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de interval voor het versturen van rapporten naar apparaten in de 1ste associatie groep."
           },
           "zwave": {
             "index": 111,
             "size": 4
           },
-          "value": 60
+          "value": 300
         },
         {
           "id": "112",
@@ -3840,14 +3898,14 @@
             "nl": "Rapportage interval associatie groep 2"
           },
           "hint": {
-            "en": "This parameter (112) determines the interval for sending report to devices in association group 2.",
-            "nl": "Deze parameter (112) bepaalt de interval voor het versturen van rapporten naar apparaten in de 2e associatie groep."
+            "en": "This parameter ({{zwaveParameterIndex}}) determines the interval for sending report to devices in association group 2.",
+            "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de interval voor het versturen van rapporten naar apparaten in de 2e associatie groep."
           },
           "zwave": {
             "index": 112,
             "size": 4
           },
-          "value": 30
+          "value": 300
         },
         {
           "id": "113",
@@ -3857,17 +3915,17 @@
             "nl": "Rapportage interval associatie groep 3"
           },
           "hint": {
-            "en": "This parameter (113) determines the interval for sending report to devices in association group 3.",
-            "nl": "Deze parameter (113) bepaalt de interval voor het versturen van rapporten naar apparaten in de 3e associatie groep."
+            "en": "This parameter ({{zwaveParameterIndex}}) determines the interval for sending report to devices in association group 3.",
+            "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de interval voor het versturen van rapporten naar apparaten in de 3e associatie groep."
           },
           "zwave": {
             "index": 113,
             "size": 4
           },
-          "value": 6
+          "value": 300
         }
       ]
-    },    
+    },   
     {
       "id": "ZW096",
       "name": {
