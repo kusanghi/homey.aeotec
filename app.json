@@ -3110,7 +3110,7 @@
         "associationGroups": [
           1
         ],
-		"multiChannelNodes": {
+		  "multiChannelNodes": {
           "1": {
             "class": "sensor",
             "capabilities": [
