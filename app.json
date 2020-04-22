@@ -3,7 +3,7 @@
   "name": {
     "en": "Aeotec"
   },
-  "version": "3.0.3",
+  "version": "3.0.4",
   "compatibility": ">=3.0.0",
   "sdk": 2,
   "brandColor": "#00A2DA",
@@ -5728,6 +5728,41 @@
         }
       ]
     },
+    {
+      "id": "ZW189",
+      "name": {
+        "en": "Range Extender 7"
+      },
+      "class": "other",
+      "capabilities": [],
+      "images": {
+        "large": "/drivers/ZW189/assets/images/large.png",
+        "small": "/drivers/ZW189/assets/images/small.png"
+      },
+      "zwave": {
+        "manufacturerId": 134,
+        "productTypeId": [
+          4,
+          516,
+          2564
+        ],
+        "productId": [
+          189
+        ],
+        "zwaveAllianceProductId": 3699,
+        "zwaveAllianceProductDocumentation": "https://products.z-wavealliance.org/ProductManual/File?folder=&filename=product_documents/3699/Range%20Extender%207%20EU%20-%20Product%20Manual.pdf",
+        "learnmode": {
+          "image": "/drivers/ZW189/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press the action button on the Range Extender 7. For secure pairing press the action button twice.",
+            "nl": "Druk op de actie knop op de Range Extender 7. Druk tweemaal op de actie knop om het apparaat beveiligd te koppelen."
+          }
+        },
+        "associationGroups": [
+          1
+        ]
+      }
+    },    
     {
       "id": "ZW120",
       "name": {
