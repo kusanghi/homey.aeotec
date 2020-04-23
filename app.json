@@ -3,7 +3,7 @@
   "name": {
     "en": "Aeotec"
   },
-  "version": "3.0.4",
+  "version": "3.0.4.1",
   "compatibility": ">=3.0.0",
   "sdk": 2,
   "brandColor": "#00A2DA",
@@ -5740,7 +5740,7 @@
         "small": "/drivers/ZW189/assets/images/small.png"
       },
       "zwave": {
-        "manufacturerId": 134,
+        "manufacturerId": 881,
         "productTypeId": [
           4,
           516,

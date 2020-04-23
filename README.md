@@ -33,6 +33,8 @@ This app support for Aeotec devices below :
 > 29. `Extender 7` - **ZW189**
 
 # Release Notes:
+## 3.0.4.1
+* Fix ManufacturerId Ranger Extender 7
 ## 3.0.4
 * Added support for ZW189 - Range Extender 7
 ## 3.0.3
